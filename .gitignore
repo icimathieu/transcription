@@ -12,6 +12,7 @@ figures/
 *.png
 *.jpg
 *.csv
+*.jpeg
 
 # Fichiers système
 .DS_Store
