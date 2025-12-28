@@ -7,6 +7,8 @@ env/
 output/
 outputs/
 figures/
+data_test/
+data/
 
 # Fichiers générés
 *.png
