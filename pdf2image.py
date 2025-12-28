@@ -30,19 +30,12 @@ def pdf_2_jpegs(files_list):
             poppler_path="/opt/homebrew/bin",
             fmt="jpeg",
             output_file="page")
+        
+def nettoyer_jpegs(file): #nettoyer mes pdfs en enlevant premières pages pdf ajoutées par la bnf
+
 
 def jpegs_2_jsonls (file):
-    import glob
-    from tqdm.auto import tqdm
-    paths_images = sorted(glob.glob(file+"/*.jpg"))
-
-#il faut que j'ai défini ocr
-    out_path = file + ".jsonl"
-    with open(out_path, "w") as f:
-        for idx, img_path in enumerate(tqdm(paths_images, total=len(paths_images)), start=1):
-            res = ocr.predict(img_path)
-            f.write(json.dumps({"page": idx, "image": os.path.basename(img_path), "ocr": res}, ensure_ascii=False) + "\n")
-            f.flush()
+    #avec ppstructure
 
 def jsonls_2_json (file):#ouvrir mes différents jsonl et en faire un seul json
     jsonls_path = file+"/*.jsonl"
@@ -69,7 +62,6 @@ if __name__ == "__main__":
 
     #interagir avec argparse
 
-    #nettoyer mes pdfs en enlevant premières pages pdf ajoutées par la bnf
 
 
 
