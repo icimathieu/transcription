@@ -6,7 +6,7 @@ import argparse
 import pandas as pd
 from tqdm import tqdm
 from pathlib import Path
-from pdf2image import convert_from_path
+from scripts_notebooks.pdf2image import convert_from_path
 #il faut aussi que j'installe poppler non ?
 
 

@@ -11,10 +11,6 @@ data_test/
 data/
 
 # Fichiers générés
-*.png
-*.jpg
-*.csv
-*.jpeg
 
 # Fichiers système
 .DS_Store
