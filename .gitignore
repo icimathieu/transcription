@@ -3,16 +3,18 @@
 venv/
 env/
 
-# Outputs / résultats
+# Outputs / data
 output/
 outputs/
 figures/
 data_test/
 data/
 
-# Fichiers générés
 
 # Fichiers système
 .DS_Store
 __pycache__/
 *.pyc
+
+# Autres
+notes_ocr_memoire.md
