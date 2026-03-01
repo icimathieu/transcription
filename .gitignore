@@ -12,6 +12,7 @@ output/paddleocr_vl_test
 data/data_not_to_git
 data/test_png_from_pdf
 data/test_tiff_from_pdf
+data/data_iiif
 
 # Fichiers système
 .DS_Store
