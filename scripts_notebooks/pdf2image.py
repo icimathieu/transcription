@@ -1,4 +1,3 @@
-#imports (ne va pas fonctionner puisque env .venv vide cf "pip list"): 
 import os
 import re
 import json
@@ -7,7 +6,7 @@ import pandas as pd
 from tqdm import tqdm
 from pathlib import Path
 from scripts_notebooks.pdf2image import convert_from_path
-#il faut aussi que j'installe poppler non ?
+
 
 
 #fonctions : 

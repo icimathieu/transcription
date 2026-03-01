@@ -1,0 +1,23 @@
+# Python version (venv): 3.9.25
+#
+# Dépendances minimales installables via `pip install -r requirements_min`
+# pour reproduire les pipelines principales:
+# - scripts_notebooks/tesseract_boxes.py
+# - scripts_notebooks/paddleocr_boxes.py
+# - scripts_notebooks/pdf2image.py
+# - scripts_notebooks/pdf2image.ipynb
+
+numpy>=1.24
+pillow>=10.0
+scikit-learn>=1.4
+opencv-contrib-python==4.10.0.84
+paddlepaddle==3.3.0
+paddleocr==3.4.0
+paddlex==3.4.2
+pdf2image>=1.17
+jupyter>=1.0
+ipykernel>=6.0
+
+# Dépendances système (hors pip):
+# - tesseract (ex: /opt/homebrew/bin/tesseract sur macOS)
+# - poppler (requis pour la conversion PDF->images avec pdf2image)
