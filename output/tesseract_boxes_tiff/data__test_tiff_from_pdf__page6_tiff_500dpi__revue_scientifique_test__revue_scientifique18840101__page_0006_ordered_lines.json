@@ -1,0 +1,1481 @@
+[
+  {
+    "index": 1,
+    "line_key": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "text": "REVUE",
+    "score": 95.72596,
+    "x1": 2690.0,
+    "y1": 448.0,
+    "x2": 4251.0,
+    "y2": 791.0,
+    "w": 1561.0,
+    "h": 343.0,
+    "cx": 3470.5,
+    "cy": 619.5,
+    "column": 0
+  },
+  {
+    "index": 3,
+    "line_key": [
+      4,
+      1,
+      1,
+      1
+    ],
+    "text": "(VINGT ET UNIÈME ANNÉE)",
+    "score": 89.55533975,
+    "x1": 2194.0,
+    "y1": 1710.0,
+    "x2": 4816.0,
+    "y2": 1886.0,
+    "w": 2622.0,
+    "h": 176.0,
+    "cx": 3505.0,
+    "cy": 1798.0,
+    "column": 0
+  },
+  {
+    "index": 4,
+    "line_key": [
+      6,
+      1,
+      1,
+      1
+    ],
+    "text": "DIRECTEUR : M.",
+    "score": 91.606036,
+    "x1": 2025.0,
+    "y1": 2375.0,
+    "x2": 3440.0,
+    "y2": 2516.0,
+    "w": 1415.0,
+    "h": 141.0,
+    "cx": 2732.5,
+    "cy": 2445.5,
+    "column": 0
+  },
+  {
+    "index": 6,
+    "line_key": [
+      10,
+      1,
+      1,
+      1
+    ],
+    "text": "3° SÉRIE. — 4° ANNÉE (PREMIER SEMESTRE).",
+    "score": 78.37446685714285,
+    "x1": 778.0,
+    "y1": 2916.0,
+    "x2": 2944.0,
+    "y2": 3078.0,
+    "w": 2166.0,
+    "h": 162.0,
+    "cx": 1861.0,
+    "cy": 2997.0,
+    "column": 0
+  },
+  {
+    "index": 7,
+    "line_key": [
+      11,
+      1,
+      1,
+      1
+    ],
+    "text": "NUMÉRO 1.",
+    "score": 95.8480415,
+    "x1": 3203.0,
+    "y1": 2957.0,
+    "x2": 3784.0,
+    "y2": 3055.0,
+    "w": 581.0,
+    "h": 98.0,
+    "cx": 3493.5,
+    "cy": 3006.0,
+    "column": 0
+  },
+  {
+    "index": 9,
+    "line_key": [
+      14,
+      1,
+      1,
+      1
+    ],
+    "text": "Paris, 4 janvier 1884.",
+    "score": 95.95643425,
+    "x1": 2191.0,
+    "y1": 3702.0,
+    "x2": 3073.0,
+    "y2": 3795.0,
+    "w": 882.0,
+    "h": 93.0,
+    "cx": 2632.0,
+    "cy": 3748.5,
+    "column": 0
+  },
+  {
+    "index": 10,
+    "line_key": [
+      15,
+      1,
+      1,
+      1
+    ],
+    "text": "Ce numéro inaugure la vingt et unième année de la Revue",
+    "score": 95.13975445454547,
+    "x1": 715.0,
+    "y1": 3914.0,
+    "x2": 3431.0,
+    "y2": 4024.0,
+    "w": 2716.0,
+    "h": 110.0,
+    "cx": 2073.0,
+    "cy": 3969.0,
+    "column": 0
+  },
+  {
+    "index": 11,
+    "line_key": [
+      15,
+      1,
+      2,
+      1
+    ],
+    "text": "scientifique. Nos lecteurs, en comparant la Revue d'aujour-",
+    "score": 84.203312,
+    "x1": 606.0,
+    "y1": 4060.0,
+    "x2": 3434.0,
+    "y2": 4167.0,
+    "w": 2828.0,
+    "h": 107.0,
+    "cx": 2020.0,
+    "cy": 4113.5,
+    "column": 0
+  },
+  {
+    "index": 12,
+    "line_key": [
+      15,
+      1,
+      3,
+      1
+    ],
+    "text": "d'hui avec la Revue de 1863 pourront se rendre facilement",
+    "score": 94.58521120000002,
+    "x1": 606.0,
+    "y1": 4200.0,
+    "x2": 3437.0,
+    "y2": 4308.0,
+    "w": 2831.0,
+    "h": 108.0,
+    "cx": 2021.5,
+    "cy": 4254.0,
+    "column": 0
+  },
+  {
+    "index": 13,
+    "line_key": [
+      15,
+      1,
+      4,
+      1
+    ],
+    "text": "compte des améliorations successives et progressives qui y",
+    "score": 93.76297862499999,
+    "x1": 603.0,
+    "y1": 4338.0,
+    "x2": 3434.0,
+    "y2": 4448.0,
+    "w": 2831.0,
+    "h": 110.0,
+    "cx": 2018.5,
+    "cy": 4393.0,
+    "column": 0
+  },
+  {
+    "index": 14,
+    "line_key": [
+      15,
+      1,
+      5,
+      1
+    ],
+    "text": "ont été introduites. |",
+    "score": 96.2694205,
+    "x1": 600.0,
+    "y1": 4453.0,
+    "x2": 1929.0,
+    "y2": 4560.0,
+    "w": 1329.0,
+    "h": 107.0,
+    "cx": 1264.5,
+    "cy": 4506.5,
+    "column": 0
+  },
+  {
+    "index": 15,
+    "line_key": [
+      15,
+      2,
+      1,
+      1
+    ],
+    "text": "Primitivement la Revue des cours scientifiques était desti-",
+    "score": 94.335224125,
+    "x1": 721.0,
+    "y1": 4619.0,
+    "x2": 3437.0,
+    "y2": 4726.0,
+    "w": 2716.0,
+    "h": 107.0,
+    "cx": 2079.0,
+    "cy": 4672.5,
+    "column": 0
+  },
+  {
+    "index": 16,
+    "line_key": [
+      15,
+      2,
+      2,
+      1
+    ],
+    "text": "née à donner au public les principales conférences,les cours",
+    "score": 94.93491544444444,
+    "x1": 603.0,
+    "y1": 4759.0,
+    "x2": 3442.0,
+    "y2": 4867.0,
+    "w": 2839.0,
+    "h": 108.0,
+    "cx": 2022.5,
+    "cy": 4813.0,
+    "column": 0
+  },
+  {
+    "index": 17,
+    "line_key": [
+      15,
+      2,
+      3,
+      1
+    ],
+    "text": "les plus importants professés dans les Facultés parisiennes",
+    "score": 93.34286312500001,
+    "x1": 546.0,
+    "y1": 4883.0,
+    "x2": 3445.0,
+    "y2": 5007.0,
+    "w": 2899.0,
+    "h": 124.0,
+    "cx": 1995.5,
+    "cy": 4945.0,
+    "column": 0
+  },
+  {
+    "index": 18,
+    "line_key": [
+      15,
+      2,
+      4,
+      1
+    ],
+    "text": "ou provinciales, dans les Universités étrangères, au Muséum",
+    "score": 96.12632475,
+    "x1": 612.0,
+    "y1": 5040.0,
+    "x2": 3448.0,
+    "y2": 5148.0,
+    "w": 2836.0,
+    "h": 108.0,
+    "cx": 2030.0,
+    "cy": 5094.0,
+    "column": 0
+  },
+  {
+    "index": 19,
+    "line_key": [
+      15,
+      2,
+      5,
+      1
+    ],
+    "text": "d'histoire naturelle, au Collège de France. |",
+    "score": 88.21304771428571,
+    "x1": 618.0,
+    "y1": 5181.0,
+    "x2": 3397.0,
+    "y2": 5282.0,
+    "w": 2779.0,
+    "h": 101.0,
+    "cx": 2007.5,
+    "cy": 5231.5,
+    "column": 0
+  },
+  {
+    "index": 20,
+    "line_key": [
+      15,
+      3,
+      1,
+      1
+    ],
+    "text": "Mais le cadre a dû s’agrandir. Peu à peu des articles ori-",
+    "score": 93.55473591666667,
+    "x1": 721.0,
+    "y1": 5324.0,
+    "x2": 3460.0,
+    "y2": 5431.0,
+    "w": 2739.0,
+    "h": 107.0,
+    "cx": 2090.5,
+    "cy": 5377.5,
+    "column": 0
+  },
+  {
+    "index": 21,
+    "line_key": [
+      15,
+      3,
+      2,
+      1
+    ],
+    "text": "ginaux ont pris place parmi les conférences et les cours.",
+    "score": 95.66312260000001,
+    "x1": 629.0,
+    "y1": 5465.0,
+    "x2": 3451.0,
+    "y2": 5569.0,
+    "w": 2822.0,
+    "h": 104.0,
+    "cx": 2040.0,
+    "cy": 5517.0,
+    "column": 0
+  },
+  {
+    "index": 22,
+    "line_key": [
+      15,
+      3,
+      3,
+      1
+    ],
+    "text": "En 1871, la Revue scientifique a succédé à la Revue des cours",
+    "score": 95.59673066666666,
+    "x1": 626.0,
+    "y1": 5599.0,
+    "x2": 3457.0,
+    "y2": 5709.0,
+    "w": 2831.0,
+    "h": 110.0,
+    "cx": 2041.5,
+    "cy": 5654.0,
+    "column": 0
+  },
+  {
+    "index": 23,
+    "line_key": [
+      15,
+      3,
+      4,
+      1
+    ],
+    "text": "scientifiques, et son volume a doublé. En 1881, une nouvelle",
+    "score": 88.86360499999999,
+    "x1": 623.0,
+    "y1": 5740.0,
+    "x2": 3454.0,
+    "y2": 5856.0,
+    "w": 2831.0,
+    "h": 116.0,
+    "cx": 2038.5,
+    "cy": 5798.0,
+    "column": 0
+  },
+  {
+    "index": 24,
+    "line_key": [
+      15,
+      3,
+      5,
+      1
+    ],
+    "text": "augmentation a dû être faite dans le nombre des pages don-",
+    "score": 95.30568154545453,
+    "x1": 629.0,
+    "y1": 5883.0,
+    "x2": 3465.0,
+    "y2": 5990.0,
+    "w": 2836.0,
+    "h": 107.0,
+    "cx": 2047.0,
+    "cy": 5936.5,
+    "column": 0
+  },
+  {
+    "index": 25,
+    "line_key": [
+      15,
+      3,
+      6,
+      1
+    ],
+    "text": "nées chaque semaine. Peut-être, contraints par le progrès",
+    "score": 94.366980625,
+    "x1": 629.0,
+    "y1": 6023.0,
+    "x2": 3462.0,
+    "y2": 6128.0,
+    "w": 2833.0,
+    "h": 105.0,
+    "cx": 2045.5,
+    "cy": 6075.5,
+    "column": 0
+  },
+  {
+    "index": 26,
+    "line_key": [
+      15,
+      3,
+      7,
+      1
+    ],
+    "text": "rapide qui emporte chaque science, serons-nous quelque",
+    "score": 94.95511742857143,
+    "x1": 626.0,
+    "y1": 6164.0,
+    "x2": 3468.0,
+    "y2": 6268.0,
+    "w": 2842.0,
+    "h": 104.0,
+    "cx": 2047.0,
+    "cy": 6216.0,
+    "column": 0
+  },
+  {
+    "index": 27,
+    "line_key": [
+      15,
+      3,
+      8,
+      1
+    ],
+    "text": "jour forcés de l’augmenter encore.",
+    "score": 88.74521320000001,
+    "x1": 623.0,
+    "y1": 6299.0,
+    "x2": 2281.0,
+    "y2": 6406.0,
+    "w": 1658.0,
+    "h": 107.0,
+    "cx": 1452.0,
+    "cy": 6352.5,
+    "column": 0
+  },
+  {
+    "index": 28,
+    "line_key": [
+      16,
+      1,
+      1,
+      1
+    ],
+    "text": "Quoi qu’il en soit, dès maintenant nous pouvons donner",
+    "score": 94.08350133333334,
+    "x1": 741.0,
+    "y1": 6582.0,
+    "x2": 3477.0,
+    "y2": 6690.0,
+    "w": 2736.0,
+    "h": 108.0,
+    "cx": 2109.0,
+    "cy": 6636.0,
+    "column": 0
+  },
+  {
+    "index": 29,
+    "line_key": [
+      17,
+      1,
+      1,
+      1
+    ],
+    "text": "à nos lecteurs — non assurément dans chaque numéro,",
+    "score": 88.67070366666667,
+    "x1": 646.0,
+    "y1": 6707.0,
+    "x2": 3491.0,
+    "y2": 6833.0,
+    "w": 2845.0,
+    "h": 126.0,
+    "cx": 2068.5,
+    "cy": 6770.0,
+    "column": 0
+  },
+  {
+    "index": 30,
+    "line_key": [
+      18,
+      1,
+      1,
+      1
+    ],
+    "text": "tout au moins une fois dans chaque semestre — un exposé",
+    "score": 95.60016163636364,
+    "x1": 623.0,
+    "y1": 6843.0,
+    "x2": 3477.0,
+    "y2": 6968.0,
+    "w": 2854.0,
+    "h": 125.0,
+    "cx": 2050.0,
+    "cy": 6905.5,
+    "column": 0
+  },
+  {
+    "index": 31,
+    "line_key": [
+      18,
+      1,
+      2,
+      1
+    ],
+    "text": "plus ‘ou moins complet de l’état actuel de chaque science,",
+    "score": 94.0122413,
+    "x1": 649.0,
+    "y1": 6981.0,
+    "x2": 3477.0,
+    "y2": 7120.0,
+    "w": 2828.0,
+    "h": 139.0,
+    "cx": 2063.0,
+    "cy": 7050.5,
+    "column": 0
+  },
+  {
+    "index": 32,
+    "line_key": [
+      18,
+      1,
+      3,
+      1
+    ],
+    "text": "grâce à nos revues générales, paraissant périodiquement,",
+    "score": 95.02023957142856,
+    "x1": 649.0,
+    "y1": 7144.0,
+    "x2": 3480.0,
+    "y2": 7251.0,
+    "w": 2831.0,
+    "h": 107.0,
+    "cx": 2064.5,
+    "cy": 7197.5,
+    "column": 0
+  },
+  {
+    "index": 33,
+    "line_key": [
+      18,
+      1,
+      4,
+      1
+    ],
+    "text": "sur l'astronomie, l’art militaire, la botanique, la géologie, la",
+    "score": 86.19468222222223,
+    "x1": 652.0,
+    "y1": 7287.0,
+    "x2": 3488.0,
+    "y2": 7392.0,
+    "w": 2836.0,
+    "h": 105.0,
+    "cx": 2070.0,
+    "cy": 7339.5,
+    "column": 0
+  },
+  {
+    "index": 34,
+    "line_key": [
+      18,
+      1,
+      5,
+      1
+    ],
+    "text": "physique, la physiologie, l'histoire des sciences, la chimie,",
+    "score": 93.69782162499999,
+    "x1": 655.0,
+    "y1": 7431.0,
+    "x2": 3485.0,
+    "y2": 7535.0,
+    "w": 2830.0,
+    "h": 104.0,
+    "cx": 2070.0,
+    "cy": 7483.0,
+    "column": 0
+  },
+  {
+    "index": 35,
+    "line_key": [
+      18,
+      1,
+      6,
+      1
+    ],
+    "text": "l'hygiène, la thérapeutique, la géographie, la zoologie.",
+    "score": 96.01939628571428,
+    "x1": 649.0,
+    "y1": 7568.0,
+    "x2": 3190.0,
+    "y2": 7678.0,
+    "w": 2541.0,
+    "h": 110.0,
+    "cx": 1919.5,
+    "cy": 7623.0,
+    "column": 0
+  },
+  {
+    "index": 36,
+    "line_key": [
+      18,
+      1,
+      7,
+      1
+    ],
+    "text": "D'ailleurs, les sommaires des principaux recueils de mé-",
+    "score": 83.359622125,
+    "x1": 764.0,
+    "y1": 7712.0,
+    "x2": 3491.0,
+    "y2": 7816.0,
+    "w": 2727.0,
+    "h": 104.0,
+    "cx": 2127.5,
+    "cy": 7764.0,
+    "column": 0
+  },
+  {
+    "index": 37,
+    "line_key": [
+      18,
+      1,
+      8,
+      1
+    ],
+    "text": "moires originaux qui portent sur soixante et une publica-",
+    "score": 91.63854388888889,
+    "x1": 664.0,
+    "y1": 7849.0,
+    "x2": 3491.0,
+    "y2": 7957.0,
+    "w": 2827.0,
+    "h": 108.0,
+    "cx": 2077.5,
+    "cy": 7903.0,
+    "column": 0
+  },
+  {
+    "index": 38,
+    "line_key": [
+      18,
+      1,
+      9,
+      1
+    ],
+    "text": "tions diverses, et que nous nous efforcons de donner avec",
+    "score": 92.2282582,
+    "x1": 666.0,
+    "y1": 7963.0,
+    "x2": 3500.0,
+    "y2": 8101.0,
+    "w": 2834.0,
+    "h": 138.0,
+    "cx": 2083.0,
+    "cy": 8032.0,
+    "column": 0
+  },
+  {
+    "index": 39,
+    "line_key": [
+      18,
+      1,
+      10,
+      1
+    ],
+    "text": "une régularité irréprochable, permettent de consulter, avec",
+    "score": 96.10484957142857,
+    "x1": 669.0,
+    "y1": 8127.0,
+    "x2": 3500.0,
+    "y2": 8235.0,
+    "w": 2831.0,
+    "h": 108.0,
+    "cx": 2084.5,
+    "cy": 8181.0,
+    "column": 0
+  },
+  {
+    "index": 40,
+    "line_key": [
+      18,
+      1,
+      11,
+      1
+    ],
+    "text": "l'aide de notre seul journal, les tables et les catalogues des",
+    "score": 94.55232172727273,
+    "x1": 672.0,
+    "y1": 8265.0,
+    "x2": 3503.0,
+    "y2": 8378.0,
+    "w": 2831.0,
+    "h": 113.0,
+    "cx": 2087.5,
+    "cy": 8321.5,
+    "column": 0
+  },
+  {
+    "index": 41,
+    "line_key": [
+      18,
+      1,
+      12,
+      1
+    ],
+    "text": "3° BÉRIE. — REVUE SCIENTIPIQUE. — XXXIII.",
+    "score": 79.34863285714286,
+    "x1": 982.0,
+    "y1": 8405.0,
+    "x2": 2918.0,
+    "y2": 8524.0,
+    "w": 1936.0,
+    "h": 119.0,
+    "cx": 1950.0,
+    "cy": 8464.5,
+    "column": 0
+  },
+  {
+    "index": 5,
+    "line_key": [
+      8,
+      1,
+      1,
+      1
+    ],
+    "text": "CHARLES RICHET",
+    "score": 87.941711,
+    "x1": 3599.0,
+    "y1": 2380.0,
+    "x2": 4985.0,
+    "y2": 2511.0,
+    "w": 1386.0,
+    "h": 131.0,
+    "cx": 4292.0,
+    "cy": 2445.5,
+    "column": 1
+  },
+  {
+    "index": 8,
+    "line_key": [
+      12,
+      1,
+      1,
+      1
+    ],
+    "text": "5 JANVIER 1884",
+    "score": 96.33911133333334,
+    "x1": 5439.0,
+    "y1": 2968.0,
+    "x2": 6260.0,
+    "y2": 3069.0,
+    "w": 821.0,
+    "h": 101.0,
+    "cx": 5849.5,
+    "cy": 3018.5,
+    "column": 1
+  },
+  {
+    "index": 42,
+    "line_key": [
+      19,
+      1,
+      1,
+      1
+    ],
+    "text": "plus importantes publications savantes de la France et de",
+    "score": 96.26576333333334,
+    "x1": 3622.0,
+    "y1": 3493.0,
+    "x2": 6452.0,
+    "y2": 3605.0,
+    "w": 2830.0,
+    "h": 112.0,
+    "cx": 5037.0,
+    "cy": 3549.0,
+    "column": 1
+  },
+  {
+    "index": 43,
+    "line_key": [
+      19,
+      1,
+      2,
+      1
+    ],
+    "text": "l'étranger ; et cela, dans le domaine de toutes les sciences.",
+    "score": 95.42737445454546,
+    "x1": 3622.0,
+    "y1": 3615.0,
+    "x2": 6444.0,
+    "y2": 3749.0,
+    "w": 2822.0,
+    "h": 134.0,
+    "cx": 5033.0,
+    "cy": 3682.0,
+    "column": 1
+  },
+  {
+    "index": 44,
+    "line_key": [
+      19,
+      2,
+      1,
+      1
+    ],
+    "text": "Nous aurions voulu publier de plus nombreux comptes",
+    "score": 95.975543125,
+    "x1": 3731.0,
+    "y1": 3779.0,
+    "x2": 6455.0,
+    "y2": 3889.0,
+    "w": 2724.0,
+    "h": 110.0,
+    "cx": 5093.0,
+    "cy": 3834.0,
+    "column": 1
+  },
+  {
+    "index": 45,
+    "line_key": [
+      19,
+      2,
+      2,
+      1
+    ],
+    "text": "rendus de Sociétés savantes. Certes, il eût été excellent de",
+    "score": 95.7416327,
+    "x1": 3628.0,
+    "y1": 3914.0,
+    "x2": 6455.0,
+    "y2": 4018.0,
+    "w": 2827.0,
+    "h": 104.0,
+    "cx": 5041.5,
+    "cy": 3966.0,
+    "column": 1
+  },
+  {
+    "index": 46,
+    "line_key": [
+      19,
+      2,
+      3,
+      1
+    ],
+    "text": "présenter à nos lecteurs les: faits exposés ou discutés à",
+    "score": 93.01236200000001,
+    "x1": 3630.0,
+    "y1": 4057.0,
+    "x2": 6464.0,
+    "y2": 4176.0,
+    "w": 2834.0,
+    "h": 119.0,
+    "cx": 5047.0,
+    "cy": 4116.5,
+    "column": 1
+  },
+  {
+    "index": 47,
+    "line_key": [
+      19,
+      2,
+      4,
+      1
+    ],
+    "text": "l'Académie de médecine, aux Sociétés de biologie et d'an-",
+    "score": 85.83393144444445,
+    "x1": 3628.0,
+    "y1": 4198.0,
+    "x2": 6467.0,
+    "y2": 4302.0,
+    "w": 2839.0,
+    "h": 104.0,
+    "cx": 5047.5,
+    "cy": 4250.0,
+    "column": 1
+  },
+  {
+    "index": 48,
+    "line_key": [
+      19,
+      2,
+      5,
+      1
+    ],
+    "text": "thropologie, à l'Académie des sciences de Berlin, de Vienne,",
+    "score": 93.50161844444445,
+    "x1": 3633.0,
+    "y1": 4335.0,
+    "x2": 6464.0,
+    "y2": 4448.0,
+    "w": 2831.0,
+    "h": 113.0,
+    "cx": 5048.5,
+    "cy": 4391.5,
+    "column": 1
+  },
+  {
+    "index": 49,
+    "line_key": [
+      20,
+      1,
+      1,
+      1
+    ],
+    "text": ". à l’Académie des Lincei de Rome, à la Royal Society de",
+    "score": 86.61717175000001,
+    "x1": 3556.0,
+    "y1": 4473.0,
+    "x2": 6472.0,
+    "y2": 4583.0,
+    "w": 2916.0,
+    "h": 110.0,
+    "cx": 5014.0,
+    "cy": 4528.0,
+    "column": 1
+  },
+  {
+    "index": 50,
+    "line_key": [
+      21,
+      1,
+      1,
+      1
+    ],
+    "text": "Londres, etc. Mais il a fallu se borner.",
+    "score": 94.091133125,
+    "x1": 3639.0,
+    "y1": 4625.0,
+    "x2": 5443.0,
+    "y2": 4726.0,
+    "w": 1804.0,
+    "h": 101.0,
+    "cx": 4541.0,
+    "cy": 4675.5,
+    "column": 1
+  },
+  {
+    "index": 51,
+    "line_key": [
+      21,
+      2,
+      1,
+      1
+    ],
+    "text": "Nous avons donc dû nous restreindre à l’Académie des",
+    "score": 95.59661177777777,
+    "x1": 3739.0,
+    "y1": 4757.0,
+    "x2": 6475.0,
+    "y2": 4849.0,
+    "w": 2736.0,
+    "h": 92.0,
+    "cx": 5107.0,
+    "cy": 4803.0,
+    "column": 1
+  },
+  {
+    "index": 52,
+    "line_key": [
+      21,
+      2,
+      2,
+      1
+    ],
+    "text": "sciences de Paris. 11 est vrai que nous donnons l'analyse",
+    "score": 86.3496145,
+    "x1": 3642.0,
+    "y1": 4897.0,
+    "x2": 6478.0,
+    "y2": 5004.0,
+    "w": 2836.0,
+    "h": 107.0,
+    "cx": 5060.0,
+    "cy": 4950.5,
+    "column": 1
+  },
+  {
+    "index": 53,
+    "line_key": [
+      21,
+      2,
+      3,
+      1
+    ],
+    "text": "des principales communications, le plus souvent d'après des",
+    "score": 95.972785125,
+    "x1": 3645.0,
+    "y1": 5026.0,
+    "x2": 6478.0,
+    "y2": 5153.0,
+    "w": 2833.0,
+    "h": 127.0,
+    "cx": 5061.5,
+    "cy": 5089.5,
+    "column": 1
+  },
+  {
+    "index": 54,
+    "line_key": [
+      21,
+      2,
+      4,
+      1
+    ],
+    "text": "notes fournies par l’auteur lui-même. Aussi ce résumé, fait",
+    "score": 95.73169022222221,
+    "x1": 3648.0,
+    "y1": 5175.0,
+    "x2": 6484.0,
+    "y2": 5294.0,
+    "w": 2836.0,
+    "h": 119.0,
+    "cx": 5066.0,
+    "cy": 5234.5,
+    "column": 1
+  },
+  {
+    "index": 55,
+    "line_key": [
+      21,
+      2,
+      5,
+      1
+    ],
+    "text": "avec un soin que tout le monde reconnaît, est-il très exact",
+    "score": 94.21718654545454,
+    "x1": 3651.0,
+    "y1": 5318.0,
+    "x2": 6490.0,
+    "y2": 5434.0,
+    "w": 2839.0,
+    "h": 116.0,
+    "cx": 5070.5,
+    "cy": 5376.0,
+    "column": 1
+  },
+  {
+    "index": 56,
+    "line_key": [
+      21,
+      2,
+      6,
+      1
+    ],
+    "text": "et comprend-il tous les détails importants. De plus, comme",
+    "score": 95.44597800000001,
+    "x1": 3653.0,
+    "y1": 5459.0,
+    "x2": 6487.0,
+    "y2": 5577.0,
+    "w": 2834.0,
+    "h": 118.0,
+    "cx": 5070.0,
+    "cy": 5518.0,
+    "column": 1
+  },
+  {
+    "index": 57,
+    "line_key": [
+      21,
+      2,
+      7,
+      1
+    ],
+    "text": "on a pu s’en apercevoir, c'estle samedi matin que paraissent",
+    "score": 92.5163986,
+    "x1": 3653.0,
+    "y1": 5599.0,
+    "x2": 6495.0,
+    "y2": 5718.0,
+    "w": 2842.0,
+    "h": 119.0,
+    "cx": 5074.0,
+    "cy": 5658.5,
+    "column": 1
+  },
+  {
+    "index": 58,
+    "line_key": [
+      22,
+      1,
+      1,
+      1
+    ],
+    "text": "nos Comples rendus analytiques, alors que les Comptes",
+    "score": 92.497115125,
+    "x1": 3585.0,
+    "y1": 5740.0,
+    "x2": 6498.0,
+    "y2": 5856.0,
+    "w": 2913.0,
+    "h": 116.0,
+    "cx": 5041.5,
+    "cy": 5798.0,
+    "column": 1
+  },
+  {
+    "index": 59,
+    "line_key": [
+      23,
+      1,
+      1,
+      1
+    ],
+    "text": "rendus officiels ne parviennent au public que le dimanche",
+    "score": 94.96615266666667,
+    "x1": 3656.0,
+    "y1": 5877.0,
+    "x2": 6498.0,
+    "y2": 5993.0,
+    "w": 2842.0,
+    "h": 116.0,
+    "cx": 5077.0,
+    "cy": 5935.0,
+    "column": 1
+  },
+  {
+    "index": 60,
+    "line_key": [
+      23,
+      1,
+      2,
+      1
+    ],
+    "text": "dans la journée.",
+    "score": 87.15964000000001,
+    "x1": 3662.0,
+    "y1": 6032.0,
+    "x2": 4406.0,
+    "y2": 6136.0,
+    "w": 744.0,
+    "h": 104.0,
+    "cx": 4034.0,
+    "cy": 6084.0,
+    "column": 1
+  },
+  {
+    "index": 61,
+    "line_key": [
+      24,
+      1,
+      1,
+      1
+    ],
+    "text": "Quant aux articles originaux qui forment la partie principale",
+    "score": 96.09593877777779,
+    "x1": 3768.0,
+    "y1": 6253.0,
+    "x2": 6495.0,
+    "y2": 6386.0,
+    "w": 2727.0,
+    "h": 133.0,
+    "cx": 5131.5,
+    "cy": 6319.5,
+    "column": 1
+  },
+  {
+    "index": 62,
+    "line_key": [
+      24,
+      1,
+      2,
+      1
+    ],
+    "text": "et essentielle de ce journal, nous ne saurions attribuer",
+    "score": 95.15184211111111,
+    "x1": 3673.0,
+    "y1": 6413.0,
+    "x2": 6507.0,
+    "y2": 6523.0,
+    "w": 2834.0,
+    "h": 110.0,
+    "cx": 5090.0,
+    "cy": 6468.0,
+    "column": 1
+  },
+  {
+    "index": 63,
+    "line_key": [
+      24,
+      1,
+      3,
+      1
+    ],
+    "text": "qu'une place très limitée aux données trop techniques;",
+    "score": 90.6690055,
+    "x1": 3673.0,
+    "y1": 6551.0,
+    "x2": 6498.0,
+    "y2": 6672.0,
+    "w": 2825.0,
+    "h": 121.0,
+    "cx": 5085.5,
+    "cy": 6611.5,
+    "column": 1
+  },
+  {
+    "index": 64,
+    "line_key": [
+      24,
+      1,
+      4,
+      1
+    ],
+    "text": "mais nous tâcherons de maintenir le niveau scientifique très",
+    "score": 95.10353777777777,
+    "x1": 3671.0,
+    "y1": 6697.0,
+    "x2": 6510.0,
+    "y2": 6799.0,
+    "w": 2839.0,
+    "h": 102.0,
+    "cx": 5090.5,
+    "cy": 6748.0,
+    "column": 1
+  },
+  {
+    "index": 65,
+    "line_key": [
+      24,
+      1,
+      5,
+      1
+    ],
+    "text": "élevé qui jusqu'ici a caractérisé notre recueil. — Tout ce qui",
+    "score": 92.88523863636364,
+    "x1": 3676.0,
+    "y1": 6837.0,
+    "x2": 6510.0,
+    "y2": 6953.0,
+    "w": 2834.0,
+    "h": 116.0,
+    "cx": 5093.0,
+    "cy": 6895.0,
+    "column": 1
+  },
+  {
+    "index": 66,
+    "line_key": [
+      24,
+      1,
+      6,
+      1
+    ],
+    "text": "{ouche les intérêts de l’enseignement supérieur, tout ce qui",
+    "score": 87.82374733333333,
+    "x1": 3679.0,
+    "y1": 6975.0,
+    "x2": 6518.0,
+    "y2": 7088.0,
+    "w": 2839.0,
+    "h": 113.0,
+    "cx": 5098.5,
+    "cy": 7031.5,
+    "column": 1
+  },
+  {
+    "index": 67,
+    "line_key": [
+      24,
+      1,
+      7,
+      1
+    ],
+    "text": "intéresse la diffusion des grandes vérités scientifiques con-",
+    "score": 95.5086795,
+    "x1": 3676.0,
+    "y1": 7116.0,
+    "x2": 6521.0,
+    "y2": 7228.0,
+    "w": 2845.0,
+    "h": 112.0,
+    "cx": 5098.5,
+    "cy": 7172.0,
+    "column": 1
+  },
+  {
+    "index": 68,
+    "line_key": [
+      24,
+      1,
+      8,
+      1
+    ],
+    "text": "temporaines, tout ce qui relève de la philosophie des",
+    "score": 95.43521211111111,
+    "x1": 3682.0,
+    "y1": 7247.0,
+    "x2": 6515.0,
+    "y2": 7380.0,
+    "w": 2833.0,
+    "h": 133.0,
+    "cx": 5098.5,
+    "cy": 7313.5,
+    "column": 1
+  },
+  {
+    "index": 69,
+    "line_key": [
+      24,
+      1,
+      9,
+      1
+    ],
+    "text": "sciences, de la physique, de la biologie, de la chimie géné-",
+    "score": 93.11044381818184,
+    "x1": 3688.0,
+    "y1": 7399.0,
+    "x2": 6515.0,
+    "y2": 7518.0,
+    "w": 2827.0,
+    "h": 119.0,
+    "cx": 5101.5,
+    "cy": 7458.5,
+    "column": 1
+  },
+  {
+    "index": 70,
+    "line_key": [
+      24,
+      1,
+      10,
+      1
+    ],
+    "text": "rales, voilà quel est notre programme.",
+    "score": 93.36235800000001,
+    "x1": 3685.0,
+    "y1": 7554.0,
+    "x2": 5501.0,
+    "y2": 7661.0,
+    "w": 1816.0,
+    "h": 107.0,
+    "cx": 4593.0,
+    "cy": 7607.5,
+    "column": 1
+  },
+  {
+    "index": 71,
+    "line_key": [
+      25,
+      1,
+      1,
+      1
+    ],
+    "text": "S'il fallait résumer en un mot les tendances de celte",
+    "score": 94.0295519,
+    "x1": 3794.0,
+    "y1": 7798.0,
+    "x2": 6521.0,
+    "y2": 7902.0,
+    "w": 2727.0,
+    "h": 104.0,
+    "cx": 5157.5,
+    "cy": 7850.0,
+    "column": 1
+  },
+  {
+    "index": 72,
+    "line_key": [
+      25,
+      1,
+      2,
+      1
+    ],
+    "text": "Revue, nous dirions que c’est un journal de vulgarisalion",
+    "score": 92.25255677777778,
+    "x1": 3696.0,
+    "y1": 7935.0,
+    "x2": 6524.0,
+    "y2": 8060.0,
+    "w": 2828.0,
+    "h": 125.0,
+    "cx": 5110.0,
+    "cy": 7997.5,
+    "column": 1
+  },
+  {
+    "index": 73,
+    "line_key": [
+      25,
+      1,
+      3,
+      1
+    ],
+    "text": "pour les savants.",
+    "score": 88.355639,
+    "x1": 3696.0,
+    "y1": 8099.0,
+    "x2": 4477.0,
+    "y2": 8211.0,
+    "w": 781.0,
+    "h": 112.0,
+    "cx": 4086.5,
+    "cy": 8155.0,
+    "column": 1
+  },
+  {
+    "index": 74,
+    "line_key": [
+      26,
+      1,
+      1,
+      1
+    ],
+    "text": "A 8,",
+    "score": 76.5239375,
+    "x1": 5967.0,
+    "y1": 8402.0,
+    "x2": 6111.0,
+    "y2": 8478.0,
+    "w": 144.0,
+    "h": 76.0,
+    "cx": 6039.0,
+    "cy": 8440.0,
+    "column": 1
+  },
+  {
+    "index": 2,
+    "line_key": [
+      3,
+      1,
+      1,
+      1
+    ],
+    "text": "SCIENTIFIQUE",
+    "score": 96.238579,
+    "x1": 583.0,
+    "y1": 1007.0,
+    "x2": 6427.0,
+    "y2": 1616.0,
+    "w": 5844.0,
+    "h": 609.0,
+    "cx": 3505.0,
+    "cy": 1311.5
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "image": "/Users/mathieu/Documents/memoire/code_memoire/transcription/data/test_tiff_from_pdf/page6_tiff_400dpi/revue_scientifique_test/revue_scientifique18840101/page_0006.tif",
+  "width": 5689,
+  "n_lines_raw": 74,
+  "n_lines_ordered": 74,
+  "column_bounds": [
+    [
+      0.0,
+      2863.8121337890625
+    ],
+    [
+      2863.8121337890625,
+      5689.0
+    ]
+  ],
+  "elapsed_seconds": 4.998,
+  "tesseract_lang": "fra",
+  "psm": 3
+}

@@ -226,6 +226,20 @@ def reorder_lines(lines: List[Dict], img_w: float) -> Tuple[List[Dict], List[Tup
     return ordered, bounds
 
 
+def make_output_stem(image_path: Path) -> str:
+    """Build a unique output stem from the image relative path."""
+    try:
+        rel = image_path.resolve().relative_to(Path.cwd().resolve())
+    except Exception:
+        rel = image_path.name
+
+    if isinstance(rel, Path):
+        rel_no_suffix = rel.with_suffix("")
+        parts = list(rel_no_suffix.parts)
+        return "__".join(parts)
+    return str(rel)
+
+
 def main() -> int:
     args = build_parser().parse_args()
     image_path = Path(args.image).expanduser().resolve()
@@ -256,7 +270,7 @@ def main() -> int:
     ordered, bounds = reorder_lines(lines, float(img_w))
     dt = perf_counter() - t0
 
-    out_prefix = out_dir / image_path.stem
+    out_prefix = out_dir / make_output_stem(image_path)
     raw_json = out_prefix.with_name(f"{out_prefix.name}_raw_lines.json")
     ordered_json = out_prefix.with_name(f"{out_prefix.name}_ordered_lines.json")
     txt_path = out_prefix.with_name(f"{out_prefix.name}_full_text.txt")
