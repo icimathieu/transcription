@@ -1,0 +1,19 @@
+{
+  "image": "/Users/mathieu/Documents/memoire/code_memoire/transcription/data/data_test/bitonal_1500w.png",
+  "width": 1500,
+  "n_lines_raw": 73,
+  "n_lines_ordered": 73,
+  "column_bounds": [
+    [
+      0.0,
+      751.4660186767578
+    ],
+    [
+      751.4660186767578,
+      1500.0
+    ]
+  ],
+  "elapsed_seconds": 2.841,
+  "tesseract_lang": "fra",
+  "psm": 3
+}

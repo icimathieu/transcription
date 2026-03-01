@@ -1,0 +1,17 @@
+{
+  "image": "/Users/mathieu/Documents/memoire/code_memoire/transcription/data/data_test/bitonal_1500w.png",
+  "width": 1500,
+  "n_lines_raw": 73,
+  "n_lines_ordered": 73,
+  "column_bounds": [
+    [
+      0.0,
+      758.6743927001953
+    ],
+    [
+      758.6743927001953,
+      1500.0
+    ]
+  ],
+  "elapsed_seconds": 197.907
+}

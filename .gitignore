@@ -4,14 +4,12 @@ venv/
 env/
 
 # Outputs
-output/
-outputs/
 figures/
 output/paddleocr_simple
+output/paddleocr_vl_test
 
 # Data
-data/
-data/data_test_not_to_git
+data/data_not_to_git
 
 # Fichiers système
 .DS_Store

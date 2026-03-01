@@ -1,0 +1,19 @@
+{
+  "image": "/Users/mathieu/Documents/memoire/code_memoire/transcription/data/data_test/bitonal_full_full.png",
+  "width": 2481,
+  "n_lines_raw": 74,
+  "n_lines_ordered": 74,
+  "column_bounds": [
+    [
+      0.0,
+      1249.3964538574219
+    ],
+    [
+      1249.3964538574219,
+      2481.0
+    ]
+  ],
+  "elapsed_seconds": 3.2,
+  "tesseract_lang": "fra",
+  "psm": 3
+}
