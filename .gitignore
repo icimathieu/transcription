@@ -3,13 +3,15 @@
 venv/
 env/
 
-# Outputs / data
+# Outputs
 output/
 outputs/
 figures/
-data_test/
-data/
+output/paddleocr_simple
 
+# Data
+data/
+data/data_test_not_to_git
 
 # Fichiers système
 .DS_Store
@@ -18,3 +20,6 @@ __pycache__/
 
 # Autres
 notes_ocr_memoire.md
+scripts_notebooks/paddleocr_vl_test.py
+scripts_notebooks/paddleocr_cpu_simple.py
+scripts_notebooks/pdf2image.py
