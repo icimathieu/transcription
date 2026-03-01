@@ -76,8 +76,9 @@ La pipeline Tesseract a été retenue comme solution principale pour ce corpus, 
 1. J'envisage de faire une pipeline pour trouver la qualité d'image à scraper optimale.
 2. Il faut que j'industrialise un peu la chaîne de traitement.
 3. Il faut que je fasse des tests de qualité d'OCR en annotant manuellement certaines données.
+2. Il va falloir industrialiser le processus, en faire un script au sein d'une pipeline qui tourne en back sur mon ordinateur pour océriser mon (grand) volume de données.
 
-## Qualité d'image: constats
+## Choix qualité d'image
 
 Des tests ont été réalisés sur différentes qualités/résolutions d'image (dont versions bitonales).
 
