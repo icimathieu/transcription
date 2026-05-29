@@ -1,106 +1,66 @@
 # Transcription OCR pour mémoire de master
 
-Ce dépôt contient des scripts et des résultats d'expérimentation OCR réalisés dans le cadre de mon mémoire de master.
+Ce dépôt contient les scripts et résultats d'expérimentation OCR réalisés dans le cadre de mon mémoire de master.
 
-Objectif: transcrire efficacement des pages imprimées du XIXe siècle (mise en page en colonnes), avec une contrainte forte de temps de calcul sur machine CPU.
+Objectif : transcrire efficacement des pages imprimées du XIXᵉ siècle (mise en page souvent en colonnes), sous contrainte de temps de calcul sur machine CPU.
 
 ## Structure du dépôt
 
 ```text
 transcription/
 ├─ data/
-│  ├─ data_to_git/             # jeux d'images publiés avec le dépôt
+│  ├─ data_to_git/             # jeu d'images de démonstration publié avec le dépôt
 │  ├─ data_not_to_git/         # données locales non publiées
-│  └─ benchmark_ocr/           # corpus et sorties d'évaluation OCR
-│     ├─ benchmark_review.md   # notes / synthèse du benchmark
-│     ├─ ocr_outputs/          # sorties textuelles par moteur (Paddle, Pero, Tesseract...)
-│     ├─ results/              # comparaisons HTML, CSV, résumés
+│  └─ benchmark_ocr/           # corpus, annotations et sorties du benchmark multi-moteurs
+│     ├─ benchmark_review.md   # méthodologie, dataset, résultats détaillés
+│     ├─ ocr_outputs/          # sorties textuelles par moteur (Tesseract, Paddle, Pero…)
+│     ├─ results/              # comparaisons HTML, CSV, résumés CER/WER, timings
 │     ├─ truth_dataset_ls/     # vérité terrain (export Label Studio)
 │     ├─ images_dataset/       # (non publié — corpus d'images source)
-│     └─ crops/                # (non publié — crops par ligne)
+│     └─ crops/                # (non publié — crops par zone)
 ├─ output/                     # généré localement à l'exécution, non publié
 ├─ scripts_notebooks/
-│  ├─ scripts_benchmark_ocr/      # scripts du benchmark multi-moteurs (référence courante)
-│  └─ archives/                   # scripts d'exploration / pipelines antérieures
-│     ├─ tesseract_boxes.py          # pipeline page-entière multi-colonnes (recommandée)
-│     ├─ paddleocr_boxes.py          # exploration Paddle + reconstruction colonnes
-│     ├─ pdf2image.ipynb             # notebook d'exploration PDF -> images -> OCR
-│     ├─ paddleocr_cpu_simple.py     (non publié)
-│     ├─ paddleocr_vl_test.py        (non publié)
-│     └─ pdf2image.py                (non publié)
+│  ├─ scripts_benchmark_ocr/   # scripts du benchmark multi-moteurs
+│  └─ archives/                # scripts d'exploration / pipelines antérieures
+│     ├─ tesseract_boxes.py        # pipeline page-entière multi-colonnes
+│     ├─ paddleocr_boxes.py        # exploration Paddle + reconstruction colonnes
+│     ├─ pdf2image.ipynb           # notebook d'exploration PDF -> images -> OCR
+│     ├─ paddleocr_cpu_simple.py   (non publié)
+│     ├─ paddleocr_vl_test.py      (non publié)
+│     └─ pdf2image.py              (non publié)
 ├─ notes_ocr_memoire.md        (non publié)
 └─ requirements
 ```
 
-
 ## Workflows testés
 
-### 0) Workflow exploratoire notebook/script (PDF -> images -> OCR)
-- Fichiers: `scripts_notebooks/archives/pdf2image.ipynb` et `scripts_notebooks/archives/pdf2image.py`.
-- Rôle dans le projet:
-  - conversion PDF -> images,
-  - premiers essais PaddleOCR,
-  - essais PP-StructureV3,
-  - essais PaddleOCR-VL,
-  - export intermédiaire JSON/JSONL.
-- Ce workflow a servi de base d'exploration avant la stabilisation des scripts dédiés `archives/paddleocr_*` et `archives/tesseract_boxes.py`.
-- Limite observée : nous avons décidés de scraper directement des .png ou .jpg et non de convertir le pdf en images.
+Cinq workflows OCR ont été explorés au fil du projet :
 
-### 1) Pipeline PaddleOCR-VL
-- Script: `scripts_notebooks/archives/paddleocr_vl_test.py`
-- Intérêt: compréhension de documents avancée.
-- Limite observée: trop lourd pour un usage massif sur CPU local (temps d'inférence élevé, overhead important). Abandonné très vite.
+1. **Notebook d'exploration PDF → images → OCR** — `archives/pdf2image.ipynb`, `archives/pdf2image.py`. Conversion PDF, premiers essais Paddle / PP-StructureV3.
+2. **PaddleOCR-VL** — `archives/paddleocr_vl_test.py`. Vision-language model, abandonné rapidement (trop coûteux sur CPU local).
+3. **PaddleOCR classique + bounding boxes** — `archives/paddleocr_cpu_simple.py`, `archives/paddleocr_boxes.py`. Qualité correcte mais temps de calcul élevé (~1 min par page CPU).
+4. **Tesseract + reconstruction de colonnes** — `archives/tesseract_boxes.py`. Pipeline page-entière, quelques secondes par page CPU.
+5. **Pero-OCR** — intégré plus tard, dans le cadre du benchmark. Modèle `pero_eu_cz_print_newspapers_2022-09-26`. Cf. `scripts_notebooks/scripts_benchmark_ocr/pero_engine.py`.
 
-### 2) Pipeline PaddleOCR "classique" + PP-StructureV3 / bounding boxes
-- Scripts: `scripts_notebooks/archives/paddleocr_cpu_simple.py`, puis `scripts_notebooks/archives/paddleocr_boxes.py`
-- Intérêt: meilleure qualité OCR que des moteurs plus légers sur cas difficiles.
-- Limite observée: temps de calcul important sur CPU (environ ~1 minute sur certaines images 1024 px, plus sur images plus grandes).
-- Utiliser PP-StructureV3 ou de la reconstruction manuelle avec bounding box est assez équivalent dans le résultat mais PP-Structure alourdit le process en calcul et en temps.
+## Benchmark multi-moteurs
 
-### 3) Pipeline Tesseract + bounding boxes + reconstruction de colonnes
-- Script: `scripts_notebooks/archives/tesseract_boxes.py`
-- Principe:
-  - OCR Tesseract en TSV (mots + boîtes),
-  - agrégation en lignes,
-  - détection automatique des colonnes,
-  - reconstruction de l'ordre de lecture.
-- Résultat pratique: vitesse nettement meilleure sur CPU -- quelques secondes par page selon la taille : de 2 secondes pour une image à deux colonnes 512 pixels de largeur à 3 secondes pour la même image en full res. Semble adéquat pour de gros volumes.
+Un benchmark formel a été conduit sur **60 pages** issues de 3 numéros de presse XIXᵉ (*L'Année scientifique et industrielle* 1876, *Bulletin de l'Académie de médecine* 1883, *Revue scientifique* 1891), avec annotation Label Studio bloc par bloc (~300 zones GT).
 
-## Conclusion méthodologique
+Méthodologie inspirée des compétitions ICDAR (PRImA Research Lab) : OCR effectué sur **crops par zone** (et non sur la page entière), CER/WER calculés via `jiwer`, agrégation pondérée par longueur de référence.
 
-La pipeline Tesseract a été retenue comme solution principale pour ce corpus, pour des raisons pragmatiques:
-- exécution beaucoup plus rapide sur CPU;
-- moteur bien optimisé pour des documents imprimés;
-- corpus majoritairement simple du point de vue visuel (imprimé XIXe, peu d'éléments graphiques complexes);
-- besoin de traiter un grand nombre de pages dans les délais d'un mémoire.
-- L'utilisation d'un modèle IA ne semble pas nécessaire, ni *a fortiori*, d'un VLM.
+Moteurs évalués : Tesseract, PaddleOCR (server), PaddleOCR mobile, PaddleOCR mobile full-res, Pero-OCR.
 
-## Suite
+Synthèse complète (dataset, méthodologie d'annotation, contraintes hardware, métriques, projections temps) : [`data/benchmark_ocr/benchmark_review.md`](data/benchmark_ocr/benchmark_review.md). Sorties brutes et tables d'évaluation sous [`data/benchmark_ocr/ocr_outputs/`](data/benchmark_ocr/ocr_outputs/) et [`data/benchmark_ocr/results/`](data/benchmark_ocr/results/).
 
-1. J'envisage de faire une pipeline pour trouver la qualité d'image à scraper optimale.
-2. Il faut que j'industrialise un peu la chaîne de traitement.
-3. Il faut que je fasse des tests de qualité d'OCR en annotant manuellement certaines données.
-2. Il va falloir industrialiser le processus, en faire un script au sein d'une pipeline qui tourne en back sur mon ordinateur pour océriser mon (grand) volume de données.
+Scripts du benchmark : [`scripts_notebooks/scripts_benchmark_ocr/`](scripts_notebooks/scripts_benchmark_ocr/).
 
-## Choix qualité d'image
+## Reproduire
 
-Des tests ont été réalisés sur différentes qualités/résolutions d'image (dont versions bitonales).
+### Prérequis système
+- Python 3.9+
+- `tesseract` installé (accessible dans le `PATH`)
 
-Constats:
-- qualité trop basse => OCR dégradé (erreurs de caractères, perte de lignes);
-- meilleure qualité => meilleur OCR;
-- conversion bitonale utile sur ce type de pages imprimées car permet de réduire l'information sans impacter le reste de la pipeline. 
-- Tesseract est plus sensible que PaddleOCR aux variations de qualité.
-- Conclusion : Étant donné que mes données proviennent de Gallica et que celle-ci indistingue le scraping sur les images de plus de 1000x, j'envisage de scraper en full res. 
-- J'envisage malgré tout de faire une pipeline simple pour évaluer la qualité d'image optimale par rapport à 1 - des contraintes de consommation internet et 2 - de qualité d'OCR.
-
-## Reproduire rapidement
-
-## Prérequis système
-- Python 3.9+ avec venv
-- `tesseract` installé sur la machine (accessible dans le `PATH`)
-
-## Installation
+### Installation
 ```bash
 git clone https://github.com/icimathieu/transcription
 cd transcription
@@ -109,7 +69,7 @@ source .venv/bin/activate
 pip install -r requirements
 ```
 
-## Lancer la pipeline recommandée (Tesseract)
+### Pipeline page-entière (Tesseract, `archives/`)
 ```bash
 source .venv/bin/activate
 python scripts_notebooks/archives/tesseract_boxes.py \
@@ -117,29 +77,11 @@ python scripts_notebooks/archives/tesseract_boxes.py \
   --tesseract-bin "$(command -v tesseract)"
 ```
 
-Sorties:
-- `output/tesseract_boxes/*_raw_lines.json`
-- `output/tesseract_boxes/*_ordered_lines.json`
-- `output/tesseract_boxes/*_full_text.txt`
-- `output/tesseract_boxes/*_meta.json`
+Sorties écrites dans `output/tesseract_boxes/` (non versionné), suffixées `_raw_lines.json`, `_ordered_lines.json`, `_full_text.txt`, `_meta.json`.
 
-## Option: reproduire les tests Paddle
-Installer dépendances complètes:
-```bash
-pip install -r requirements
-```
-
-Puis utiliser:
-- `scripts_notebooks/archives/paddleocr_boxes.py`
-- `scripts_notebooks/archives/paddleocr_cpu_simple.py`
-- `scripts_notebooks/archives/paddleocr_vl_test.py`
-
-## Reproduire les sorties en batch
-
-Pour générer les sorties Tesseract pour l'ensemble du corpus publié:
+Pour traiter l'ensemble du corpus de démonstration :
 
 ```bash
-source .venv/bin/activate
 for img in data/data_to_git/*.png; do
   python scripts_notebooks/archives/tesseract_boxes.py \
     --image "$img" \
@@ -147,22 +89,15 @@ for img in data/data_to_git/*.png; do
 done
 ```
 
-Les fichiers seront écrits dans `output/tesseract_boxes/` (dossier généré localement, non versionné) avec le schéma de nommage:
-- `<nom_image>_raw_lines.json`
-- `<nom_image>_ordered_lines.json`
-- `<nom_image>_full_text.txt`
-- `<nom_image>_meta.json`
+### Relancer le benchmark multi-moteurs
+Voir [`scripts_notebooks/scripts_benchmark_ocr/run_benchmark.py`](scripts_notebooks/scripts_benchmark_ocr/run_benchmark.py) et la section *Pipeline d'évaluation* de [`benchmark_review.md`](data/benchmark_ocr/benchmark_review.md) pour les commandes et l'installation des moteurs additionnels (PaddleOCR, pero-ocr).
 
-## Données et sorties
+## Données
 
-Le dossier `data/data_to_git/` (corpus de démonstration) et `data/benchmark_ocr/` (corpus et résultats du benchmark multi-moteurs) sont versionnés pour la reproductibilité. Les sorties OCR brutes (`output/`) sont générées localement à l'exécution et ne sont pas publiées.
-
-## Confidentialité et usage d'outils IA
-
-Ce travail a été réalisé en mode **opt-out** pour la confidentialité des données.
-
-Les assistants **Codex** et **ChatGPT** ont été utilisés comme tiers aide technique (scripting, tests, documentation), sous supervision humaine.
+- `data/data_to_git/` — corpus de démonstration pour la pipeline page-entière.
+- `data/benchmark_ocr/` — dataset, annotations, sorties OCR et résultats du benchmark. Les sous-dossiers `images_dataset/` (images source) et `crops/` (crops par zone) ne sont pas versionnés.
+- `output/` — sorties générées localement à l'exécution, non versionné.
 
 ## Licence
 
-Le projet est distribué sous la licence Apache 2.0 ajoutée au dépôt (voir le fichier de licence à la racine du repo).
+Apache 2.0 — voir [`LICENSE`](LICENSE).

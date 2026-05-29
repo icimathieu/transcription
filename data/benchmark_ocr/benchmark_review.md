@@ -261,3 +261,45 @@ Une table `results/results.csv` avec une ligne par (page × zone × moteur × va
 - **Rapport HTML qualitatif** : `results/comparison_*.html` (1 par revue) — affiche pour chaque crop son image + GT + sortie de chaque moteur avec **diff caractère par caractère colorisé**.
 
 C'est le tableau qu'on commentera dans le mémoire pour justifier le choix du moteur en production.
+
+---
+
+# Résultats et choix de moteur
+
+## Qualité (CER / WER globaux pondérés, variante `brut`)
+
+| Moteur | CER | WER |
+|---|---|---|
+| **pero** | **0.0108** | **0.0384** |
+| paddleocr (server) | 0.0269 | 0.0874 |
+| paddleocr_mobile | 0.0445 | 0.2178 |
+| paddleocr_mobile_fullres | 0.0588 | 0.2479 |
+| tesseract | 0.0886 | 0.2202 |
+
+Variante `joint` (césures recollées) quasi identique à 10⁻⁴ près. Décompositions par `type_zone` (corps / titre / auteur / autre) et par revue dans [`results/summary.txt`](../results/summary.txt). Diffs caractère par caractère colorisés dans `results/comparison_*.html`.
+
+## Vitesse (par crop, hot start)
+
+| Moteur | médiane | p95 | proj. 100k crops | proj. 1M crops |
+|---|---|---|---|---|
+| tesseract | 0.16 s | 1.51 s | 4.3 h | 1.8 j |
+| pero | 0.48 s | 4.78 s | 12.9 h | 5.4 j |
+| paddleocr_mobile | 1.32 s | 12.89 s | 1.4 j | 14.0 j |
+| paddleocr_mobile_fullres | 6.92 s | 19.94 s | 8.0 j | 79.8 j |
+| paddleocr (server) | 12.90 s | 200.57 s | 14.7 j | 146.9 j |
+
+Détails et projections complètes : [`results/timing_summary.txt`](../results/timing_summary.txt).
+
+## Lecture
+
+- **Pero domine en qualité** : CER < 1 %, WER < 4 %, écart net sur tous les types de zone et les trois revues. Performance parfaite (CER = 0) sur les zones `auteur` et `titre`.
+- **Tesseract reste le plus rapide** (3× plus rapide que Pero) mais paye une qualité ~8× moindre, et s'effondre sur *L'Année scientifique 1876* (CER = 0.33 vs ~0.03 sur les deux autres revues) — vraisemblablement à cause de la qualité d'impression et des illustrations gravées intercalées.
+- **PaddleOCR server** est correct en qualité (CER 0.027) mais ~27× plus lent que Pero — non viable sur gros volume CPU.
+- Les variantes **mobile** et **mobile_fullres** de Paddle restent dominées par Pero sur les deux dimensions.
+
+## Choix retenu pour la production
+
+**Pero-OCR** (`pero_eu_cz_print_newspapers_2022-09-26`). Meilleure qualité du benchmark, vitesse acceptable (≈ 5 jours pour 1M crops sur CPU), robustesse uniforme sur les 3 revues. Le coût d'installation (téléchargement du modèle + `config_cpu.ini`) est ponctuel.
+
+Tesseract conserve un intérêt comme moteur de fallback rapide pour des usages où la latence par crop prime sur la qualité (preview, exploration interactive).
+
