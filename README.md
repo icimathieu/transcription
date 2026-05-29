@@ -1,9 +1,5 @@
 # Transcription OCR pour mémoire de master
 
-Ce dépôt contient les scripts et résultats d'expérimentation OCR réalisés dans le cadre de mon mémoire de master.
-
-Objectif : transcrire efficacement des pages imprimées du XIXᵉ siècle (mise en page souvent en colonnes), sous contrainte de temps de calcul sur machine CPU.
-
 ## Structure du dépôt
 
 ```text
@@ -44,7 +40,7 @@ Cinq workflows OCR ont été explorés au fil du projet :
 
 Un benchmark formel a été conduit sur **60 pages** issues de 3 numéros de presse XIXᵉ (*L'Année scientifique et industrielle* 1876, *Bulletin de l'Académie de médecine* 1883, *Revue scientifique* 1891), avec annotation Label Studio bloc par bloc (~300 zones GT).
 
-Méthodologie inspirée des compétitions ICDAR (PRImA Research Lab) : OCR effectué sur **crops par zone** (et non sur la page entière), CER/WER calculés via `jiwer`, agrégation pondérée par longueur de référence.
+Méthodologie inspirée des compétitions ICDAR (PRImA Research Lab) : OCR effectué sur **crops par zone** (et non sur la page entière), CER/WER calculés via `jiwer`.
 
 Moteurs évalués : Tesseract, PaddleOCR (server), PaddleOCR mobile, PaddleOCR mobile full-res, Pero-OCR.
 
@@ -94,9 +90,9 @@ Voir [`scripts_notebooks/scripts_benchmark_ocr/run_benchmark.py`](scripts_notebo
 
 ## Données
 
-Les **images source ne sont pas publiées** dans le dépôt (volumétrie incompatible avec GitHub, et redondance avec un accès public déjà existant). Sont en revanche versionnés : les annotations, les sorties OCR par moteur, les tables d'évaluation CER/WER et les rapports de comparaison HTML — c'est-à-dire tout ce qui permet de relire le benchmark sans avoir à le relancer.
+Les **images source ne sont pas publiées** dans le dépôt. Sont en revanche versionnés : les annotations, les sorties OCR par moteur, les tables d'évaluation CER/WER et les rapports de comparaison HTML — c'est-à-dire tout ce qui permet de relire le benchmark sans avoir à le relancer.
 
-Le corpus du benchmark provient de **Gallica** (BnF) et peut être retéléchargé librement aux trois URLs suivantes (les 20 premières pages de chaque numéro ont été utilisées) :
+Le corpus du benchmark provient de **Gallica** (BnF) et peut être retéléchargé librement aux trois URLs suivantes (les 15 premières pages de chaque numéro ont été utilisées) :
 
 - *L'Année scientifique et industrielle* — 1876 : <https://gallica.bnf.fr/ark:/12148/bpt6k201105v>
 - *Bulletin de l'Académie de médecine* — 1883 : <https://gallica.bnf.fr/ark:/12148/bpt6k408673d>
