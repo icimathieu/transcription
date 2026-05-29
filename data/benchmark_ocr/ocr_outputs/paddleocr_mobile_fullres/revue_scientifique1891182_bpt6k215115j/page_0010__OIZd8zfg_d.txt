@@ -1,0 +1,56 @@
+ciproque; on y parvient par lartifice suivant : dans
+une cuve en verre, on verse un melange d'eau et
+d'alcool titré, de façon a présenter la méme densité
+qu'une huile quelconque; si,a laide d'une pipete, on
+vient a verser cette huile au sein de leau alcoolisee, on
+voit l'huile, soustraite ainsi a laction de la pesanteur,
+former des sphères parfaites flottant au sein du me-
+lange alcoolique. La surface libre de la sphere huileuse
+se comporte donc comme le ferait une enveloppe élas-
+tique qui pousserait les molécules d'huile les unes
+contre les autres de dehors en dedans. Lexistence de
+cette force elastique, de cette lension superficielle, se de-
+montre plus nettement encore par lexpérience sui-
+vante :
+Avec de l'eau de savon glycerinee, on souffle a l'ex-
+trémité d'un tube une grosse bulle. Si on vient a mettre
+le tube en communication avec un manomètre a eau,
+on constate, par le dénivellement de la colonne liquide,
+que l'air enfermé dans la bulle est le siege d'une pres-
+sion d'autant plus forte que le diamètre de la bulle est
+plus petit.
+L'enveloppe liquide constituant la bulle se comporte
+donc comme le ferait une sphere elastique, un ballon
+de caoutchouc, par exemple, qu'on aurait insuffle.
+Cette tension superficielle existe a la surface libre de
+tout liguide contenu dans un vase. La surface de ce
+liquide est le siège d'une pression moléculaire dirigee
+du dehors au dedans, comme si le liquide était recou-
+vert par une membrane élastique tendue plus ou moins
+fortement, suivant la nature du liquide.
+Cette tension superficielle, qui a lieu dans ce cas a la
+surface de contact d'un liquide et de l'air, existe ega-
+lementa la surface de contact de deux liquides quel-
+conques, le mercure et leau, par exemple. On donne
+aussi le nom de couche double a cette surface de separa-
+tion.
+Pour le cas particulier de lean et du mercure,
+M. Lippmann a démontré par de remarquables expe-
+riences que la tension superficielle, ou la constante ca-
+pillaire, sur la surface de séparation des deux liquides,
+est une fonction de la difference du potentiel électrique
+de ces deux liquides.
+Cette tension superficielle et la tension électrique a
+la surface de contact de leau et du mercure sont deux
+quantités qui subissent des variations simultanées.
+M. Lippmann a constaté que cette tension superficielle
+augmente proportionnellement a la tension electrique
+jusqu'a un maximum qui a lieu quand cette tension
+électrique atteint un volt environ. La tension superfi-
+cielle atteint alors une fois et demie environ sa valeur
+normale. C'est sur cette observation que repose son
+électrometre capillaire, dont voici le principe :
+Un tube capillaire A (fig. 5) communique,d'une part,
+avec le vase plus large C renfermant du mercure,et,
+d'autre part, avec le vase D contenant de l'eau acidu-
+lée sulfurique surmontant une couche B de mercure.

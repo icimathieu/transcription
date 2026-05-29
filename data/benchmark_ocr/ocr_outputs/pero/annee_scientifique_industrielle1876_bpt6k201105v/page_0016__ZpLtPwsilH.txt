@@ -1,0 +1,37 @@
+le Jahrsbuch de Berlin, une observation qu'il avait faite
+le 10 octobre 1802. Bien que le temps ne fût pas très-
+propice, une petite tache ronde se montra. sur le soleil.
+Quatre heures après, la tache avait disparu; les nuages
+avaient empêché de la suivre. Mais quand on l'observa
+durant trois minutes de temps, elle avait avancé de deux
+minutes d'arc sur le disque lumineux.
+Enfin, Decuppis a annoncé, le 20 octobre 1839, avoir yu
+une tache imparfaitement ronde et à contours nettement
+terminés s'avancer d'un mouvement rapide, de manière
+qu'elle traversa le disque du soleil en six heures de temps.
+Telles sont les seules observations que M. Le Verrier
+ait voulu retenir. Elles conduisent à représenter le mou-
+vement de la planète par la formule :
+V = 121°,49 + 10°,90178 J — 0°,52 cos V,
+V étant la longitude et J le temps compté en jours
+depuis 1750.
+La durée de la révolution de la planète ainsi repré-
+sentée serait de trente-trois jours et une fraction (225 dix-
+millièmes de jour). La distance de cette planète au soleil
+serait 0,201, celle de la terre étant l'unité, ce qui représente
+environ la cinquième partie de la distance de la terre au
+soleil.
+Ces cinq observations répondent aux passages d'un même
+corps devant le soleil.
+« Ainsi, dit M. Le Verrier dans sa dernière communica-
+tion, au lieu d'un passage prochain dont on espérait tirer
+la confirmation de l'existence dè l'astre Lescarbault, nous
+venons de constater quatre autres passages de ce corps. »
+Le passage d'octobre 1876, qui eût été une conséquence
+nécessaire de la relation supposée entre d'autres passages
+et dont le nombre vient d'être fixé à cinq, ne pouvait plus
+être attendu dès le moment où ces passages n'appartien-
+nent pas à un même corps, si l'on fait entrer en ligne de
+compte des observations offrant un certain degré d'exac-
+titude, bien que l'on n'ait pas cru devoir les accepter jus-
+qu'ici. Bien plus, dans la théorie que M. Le Verrier a

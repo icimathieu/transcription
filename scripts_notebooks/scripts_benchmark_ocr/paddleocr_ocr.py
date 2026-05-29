@@ -27,6 +27,15 @@ import numpy as np
 
 
 DEFAULT_LANG = "fr"
+DEFAULT_MAX_SIDE = 2000  # downscale crops dont le côté max dépasse cette valeur.
+                         # nécessaire car Paddle (modèle server_det) consomme
+                         # beaucoup de RAM sur les très grands crops. Tests :
+                         #   - max_side=full   → OOM/timeout sur la plupart des
+                         #     crops > 5 Mpx (cf. benchmark_review.md).
+                         #   - max_side=1500   → marche partout, ~37 min/160 crops.
+                         #   - max_side=2000   → compromis qualité/RAM retenu.
+                         # 2000 px ≈ 270 dpi sur les pages Gallica scannées en
+                         # full res (typiquement 4000-5000 px de côté max).
 _OCR_INSTANCE = None  # cache d'instance PaddleOCR
 
 
@@ -114,19 +123,47 @@ def _get_ocr(lang: str = DEFAULT_LANG, keep_model_source_check: bool = False):
     return _OCR_INSTANCE
 
 
+def _maybe_downscale(image_path: Path, max_side: int) -> Path:
+    """Si le crop dépasse max_side sur son plus grand côté, on écrit une
+    version réduite dans un tmp et on renvoie ce chemin. Sinon on renvoie
+    le chemin original. Évite l'OOM sur les très grands crops (>5 Mpx).
+    """
+    from PIL import Image
+    import tempfile
+    with Image.open(image_path) as img:
+        w, h = img.size
+        m = max(w, h)
+        if m <= max_side:
+            return image_path
+        scale = max_side / m
+        new_size = (int(w * scale), int(h * scale))
+        # tmp persistant le temps de l'inférence ; on garde le suffix .png
+        tmp = Path(tempfile.gettempdir()) / f"paddleocr_ds_{image_path.stem}.png"
+        img.resize(new_size, Image.LANCZOS).save(tmp, "PNG")
+        return tmp
+
+
 def transcribe(
     image_path: Path,
     *,
     lang: str = DEFAULT_LANG,
     keep_model_source_check: bool = False,
+    max_side: int = DEFAULT_MAX_SIDE,
 ) -> str:
-    """Renvoie la transcription concaténée (lignes triées top-to-bottom)."""
+    """Renvoie la transcription concaténée (lignes triées top-to-bottom).
+
+    Si le crop dépasse `max_side` (px) sur son plus grand côté, il est
+    automatiquement redimensionné en LANCZOS avant inférence — sinon Paddle
+    consomme >5 GB RAM et se fait OOM-kill sur macOS.
+    """
     image_path = Path(image_path).expanduser().resolve()
     if not image_path.exists():
         raise FileNotFoundError(image_path)
 
+    img_for_ocr = _maybe_downscale(image_path, max_side)
+
     ocr = _get_ocr(lang=lang, keep_model_source_check=keep_model_source_check)
-    results = list(ocr.predict(str(image_path)))
+    results = list(ocr.predict(str(img_for_ocr)))
     if not results:
         return ""
 

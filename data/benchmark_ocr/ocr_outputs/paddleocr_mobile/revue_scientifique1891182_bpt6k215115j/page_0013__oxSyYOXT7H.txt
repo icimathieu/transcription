@@ -1,0 +1,8 @@
+Considérons un globule de mercure plongé dans
+l'eau acidulée ct relié a une des bornes d'un galvano-
+metre par un fil isolé du liquide acidulé, l'autre borne
+communiquant a une masse de mercure situee dans la
+meme eau acidulée. Si nous venons à déformer méca-
+niquement le globule de mercure, nous savons que
+cette déformation s'accompagnera de la production
+d'un courant (expérience de Lippmann). Si la surface

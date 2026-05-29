@@ -1,0 +1,22 @@
+Tant que les deux vases sont au repos, aucun cou-
+rant ne traverse le galvanometre; mais si l'on vient a
+incliner brusquement le vase V, par exemple, aussitot
+l'aiguille est déviée, indiquant un courant qui va,a
+travers le liquide, du verre penché au verre rese
+droit.
+En disposant l'experience commelindique la figure 7,
+on obtient un courant permanent a oscillations perio-
+diques. Du mercure s'écoule goutte à goutte par la
+pointe d'un entonnoir effile A, en traversant une couche
+d'eau acidulée C; lécoulement de chaque goutte pro-
+duit une augmentation de la surface totale de contact,
+et, par suite,une electrisation du mercure en A. La
+disparition en B est accompagnee d'une diminution de
+la surface totale de contact, et produit une electrisation
+inverse du mercure B.Si l'on réunit les fils α etβa une
+patte galvanoscopique de grenouille,cette patte onne
+une secousse a chaque goutte qui tombe.
+Dans les memes conditions, un galvanometre ordi-
+naire donnerait une deviation permanente accusant
+un courant continu allant de lentonnoir au verre a
+travers le liquide. Mes galvanomètres apériodiques,

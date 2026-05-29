@@ -9,22 +9,25 @@ Objectif: transcrire efficacement des pages imprimées du XIXe siècle (mise en 
 ```text
 transcription/
 ├─ data/
-│  ├─ data_to_git/        # jeux d'images publiés avec le dépôt
-│  └─ data_not_to_git/    # données locales non publiées
-├─ output/
-│  ├─ tesseract_boxes/    # sorties OCR Tesseract + colonnes reconstruites
-│  ├─ paddleocr_boxes/    # sorties OCR PaddleOCR + colonnes reconstruites
-│  ├─ paddleocr_simple/   # sorties pipeline Paddle + PP-StructureV3 (non publiées)
-│  └─ paddleocr_vl_test/  # sorties PaddleOCR-VL (non publiées)
+│  ├─ data_to_git/             # jeux d'images publiés avec le dépôt
+│  ├─ data_not_to_git/         # données locales non publiées
+│  └─ benchmark_ocr/           # corpus et sorties d'évaluation OCR
+│     ├─ benchmark_review.md   # notes / synthèse du benchmark
+│     ├─ ocr_outputs/          # sorties textuelles par moteur (Paddle, Pero, Tesseract...)
+│     ├─ results/              # comparaisons HTML, CSV, résumés
+│     ├─ truth_dataset_ls/     # vérité terrain (export Label Studio)
+│     ├─ images_dataset/       # (non publié — corpus d'images source)
+│     └─ crops/                # (non publié — crops par ligne)
+├─ output/                     # généré localement à l'exécution, non publié
 ├─ scripts_notebooks/
 │  ├─ tesseract_boxes.py
 │  ├─ paddleocr_boxes.py
-│  ├─ paddleocr_cpu_simple.py (non publié)
-│  ├─ paddleocr_vl_test.py (non publié)
-│  ├─ pdf2image.py
-│  └─ pdf2image.ipynb
-├─ notes_ocr_memoire.md (non publié)
-├─ requirements_min
+│  ├─ paddleocr_cpu_simple.py  (non publié)
+│  ├─ paddleocr_vl_test.py     (non publié)
+│  ├─ pdf2image.py             (non publié)
+│  ├─ pdf2image.ipynb
+│  └─ scripts_benchmark_ocr/   # scripts du benchmark multi-moteurs
+├─ notes_ocr_memoire.md        (non publié)
 └─ requirements
 ```
 
@@ -102,7 +105,7 @@ git clone https://github.com/icimathieu/transcription
 cd transcription
 python -m venv .venv
 source .venv/bin/activate
-pip install -r requirements_min
+pip install -r requirements
 ```
 
 ## Lancer la pipeline recommandée (Tesseract)
@@ -130,9 +133,9 @@ Puis utiliser:
 - `scripts_notebooks/paddleocr_cpu_simple.py`
 - `scripts_notebooks/paddleocr_vl_test.py`
 
-## Reproduire les sorties publiées
+## Reproduire les sorties en batch
 
-Pour générer les mêmes types de sorties que celles versionnées dans `output/`:
+Pour générer les sorties Tesseract pour l'ensemble du corpus publié:
 
 ```bash
 source .venv/bin/activate
@@ -143,7 +146,7 @@ for img in data/data_to_git/*.png; do
 done
 ```
 
-Les fichiers seront écrits dans `output/tesseract_boxes/` avec le même schéma de nommage:
+Les fichiers seront écrits dans `output/tesseract_boxes/` (dossier généré localement, non versionné) avec le schéma de nommage:
 - `<nom_image>_raw_lines.json`
 - `<nom_image>_ordered_lines.json`
 - `<nom_image>_full_text.txt`
@@ -151,7 +154,7 @@ Les fichiers seront écrits dans `output/tesseract_boxes/` avec le même schéma
 
 ## Données et sorties
 
-Les dossiers `data/` et `output/` utiles à la reproductibilité ont été rendus disponibles sur le dépôt GitHub.
+Le dossier `data/data_to_git/` (corpus de démonstration) et `data/benchmark_ocr/` (corpus et résultats du benchmark multi-moteurs) sont versionnés pour la reproductibilité. Les sorties OCR brutes (`output/`) sont générées localement à l'exécution et ne sont pas publiées.
 
 ## Confidentialité et usage d'outils IA
 

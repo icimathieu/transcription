@@ -100,25 +100,29 @@ def transcribe(
     page_layout = PageLayout(id=image_path.stem, page_size=(h, w))
     page_layout = parser.process_page(image, page_layout)
 
-    # Collecter toutes les lignes de toutes les régions, trier top-to-bottom.
-    lines: List[dict] = []
+    # Respecter l'ordre de lecture fixé par pero (SmartRegionSorter) :
+    # on itère région par région, et dans chaque région ligne par ligne via
+    # l'ordre fourni par l'API (déjà top-to-bottom au sein d'une colonne).
+    # Trier globalement par cy mélange les colonnes ligne-à-ligne — bug
+    # documenté dans benchmark_review.md.
+    region_texts: List[str] = []
     for region in page_layout.regions:
+        # Au sein d'une région : tri top-to-bottom par y de baseline.
+        lines_in_region = []
         for line in region.lines:
             text = (line.transcription or "").strip()
             if not text:
                 continue
-            # baseline : liste de points [(x,y),...]. cy = moyenne des y.
             try:
                 ys = [pt[1] for pt in line.baseline]
                 cy = float(sum(ys) / len(ys)) if ys else 0.0
-                xs = [pt[0] for pt in line.baseline]
-                cx = float(sum(xs) / len(xs)) if xs else 0.0
             except Exception:
-                cy, cx = 0.0, 0.0
-            lines.append({"text": text, "cy": cy, "cx": cx})
-
-    lines.sort(key=lambda l: (l["cy"], l["cx"]))
-    return "\n".join(l["text"] for l in lines)
+                cy = 0.0
+            lines_in_region.append((cy, text))
+        lines_in_region.sort(key=lambda t: t[0])
+        if lines_in_region:
+            region_texts.append("\n".join(t for _, t in lines_in_region))
+    return "\n".join(region_texts)
 
 
 def _build_parser() -> argparse.ArgumentParser:

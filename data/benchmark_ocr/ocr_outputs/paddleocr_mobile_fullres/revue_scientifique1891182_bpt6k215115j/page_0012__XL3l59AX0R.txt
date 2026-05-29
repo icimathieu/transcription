@@ -1,0 +1,23 @@
+.0
+téléphone (ou mieux un microphone), l'appareil repro-
+duit la parole.
+Les deformations mecaniques, quelque faibles et quelque.
+rapides qu'elles soient, modifient la tension electrique.
+Reciproquement : les variations de tension electrique,
+quelque faibles et quelque rapides qu'elles soient, s'accom-
+pagnent d'une deformation micanique..
+Le télephone a mercure d'Antoine Breguet le de-
+-
+montre surabondamment.
+Cet instrument se compose (fig. 9) de deux vases V V'
+remplis de mercure et d'eau acidulee, dans lesquels
+plongent deux tubes TT' a bout effilé, contenant du
+mercure, et recouverts par deux membranes vibrantes.
+On réunit entre elles, par des fils métalliques, les
+colonnes de mercure T et T' et les couches de mercure
+M et M' qui occupent le fond des deux vases. En faisant
+vibrer la lame A, la lame A' reproduit la vibration. La
+vibration en A déforme la colonne T et engendre un
+courant vibratoire qui,a son tour,déforme la colonne T'
+électriquement et fait vibrer A'.
+Ce télephone transmet non seulement les vibrations

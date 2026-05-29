@@ -5,8 +5,7 @@ env/
 
 # Outputs
 figures/
-output/paddleocr_simple
-output/paddleocr_vl_test
+output/
 
 # Data
 data/data_not_to_git
@@ -14,7 +13,8 @@ data/test_png_from_pdf
 data/test_tiff_from_pdf
 data/data_iiif
 data/bin_here
-data/benchmark_ocr
+data/benchmark_ocr/images_dataset/
+data/benchmark_ocr/crops/
 
 # Fichiers système
 .DS_Store

@@ -1,0 +1,56 @@
+environ 5 centiemes de millimetre. Il sert a la fois de
+conducteur au courant d'axe de rotation au cadre gal-
+vanometrique, et de ressort antagoniste s'opposant e,
+par conséquent, mesurant la force qui tend a devier le
+cadre.
+Cet instrument, on le comprend, ne peut etre in-
+fuencé, soit par le magnétisme terrestre, soit par le
+voisinage des corps magnetiques. De plus, il est abso-
+lument aperiodique et instaniane, c'est-a-dire que, tra-
+versé par un courant, le conducteur mobile va prendre
+immediatement sa position d'equilibre sans aucune
+oscillation, et qu'il suit fidelement Ies moindres varia-
+tions du courant. Sa sensibilite est tres grande. Celui
+que vous avez sous les yeux n'a que 2oo ohms de ré-
+sistance, et il devie d'une division de l'echelle lorsqu'il
+est traversé par un courant provenant d'un element
+Daniell qui a franchi une résistance de 80o negohms.
+C'est une sensibilité vingt fois supéricuro à celle qu'il
+nous faut, et qu'on obtient seulement avec de bons
+galvanometres de Thomson, qui auraient pour nous
+l'inconvenient d'osciller et d'etre infl uences par le yoi-
+sinage des corps magnetiques.
+J'ai donné a cet appareil bien d'autres formes pour
+les besoins de la physique ou de l'électrothérapie,
+mais celle que je viens de decrire convient plus specia-
+lement aux recherches d'electro-physiologie qui nous
+occupent en ce moment.
+Le galvanometre à circuit mobile est excellent pour les
+recherches delicates lorsque l'on craint le voisinage
+des corps magnétiques, mais il a l'inconvénient de
+manquer d'elasticite et de ne pouvoir se preter a toutes
+les mesures que l'on pcut avoir a effectuer en électro-
+physiologie. Le suivant, qui rentre dans la categorie
+des galvanometres d aimant mobile, repond au contraire
+a tous les besoins, et c'est pourquoi je l'ai appelé galva-
+nometre universel aperiodigue.Il derive de la boussole de
+Wiedemann comme prineipe.
+Il se compose (fg.3 et 4) do deux parties distincles :
+1 une partie fixe constituant le socle et les bobines;
+2 une partie mobile qui porte l'équipage magnétique,
+le miroir et le barreau aimanté compensateur.
+Partie fixe.-— Sur-un plateau circulaire P se trouve
+fixee de champ, suivant un diametre, une regle di-
+visee R. Le plateau repose sur trois pointes, dont deux
+seulement sont des vis calantes VV'. La ligne qui les
+joint est perpendiculaire a la direclion de la ligne R,
+de sorte qu'il sufit de placer les vis calantes VV sur la
+ligne du méridien magnetique pour que l'appareil soit
+oriente une fois pour toutes. Le long de la regle glis-
+sent deux equerres fendues EE, munies de vis de ser-
+rage. La partie supérieure porte un bouton a vis D qui
+sert a xer les bobines circulaires ou passe le courant
+a mesurer. Ces bobines en bois sont creusées d'une ca-
+vité hémisphérique pour loger Iamortisseur en cuivre
+rouge 6.Le remplacement de ces bobines est des plus
+simples et lappareil en porte deux jeux : un premier a

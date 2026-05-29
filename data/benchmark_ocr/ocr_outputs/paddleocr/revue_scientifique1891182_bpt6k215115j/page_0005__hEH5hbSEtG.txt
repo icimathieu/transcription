@@ -1,0 +1,17 @@
+Un tube de verre T, effilé en pointe, est rempli de la
+solution physiologique. Dans ce tube plonge une tige
+d'argent C, de surface variable, recouverte de chlorure
+d’argent fondu. La goutte de liquide qui sort par la
+pointe du tube vient au contact du tissu. L'électrode se
+fixe à une tige articulée, mobile en tous sens en E sur
+un support isolé. D est la borne qui reçoit le fil allant
+au galvanomètre, B la borne de court circuit pour re-
+lier les deux électrodes entre elles.
+Ces électrodes sont sensibles å la lumière. Elles donnent
+un courant, si elles sont inégalement éclairées, quand
+le galvanomètre est très sensible. Il suffit de les proté-
+ger en recouvrant le tube de verre d'un vernis noir ou
+d'un bout de tube en caoutchouc. Dans ce cas, elles
+constituent un véritable actinomètre photo-chimique.
+En chlorurant des serre-fines en argent, on constitue
+une forme d’électrodes impolarisables, excellentes

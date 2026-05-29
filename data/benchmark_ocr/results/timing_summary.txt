@@ -1,0 +1,46 @@
+==============================================================================
+TEMPS D'INFÉRENCE PAR MOTEUR
+==============================================================================
+
+Source : /Users/mathieu/Documents/memoire/code_memoire/transcription/data/benchmark_ocr/ocr_outputs/timings.csv
+
+Avec cold start (1ère exécution = chargement du modèle inclus) :
+  moteur        n      total      mean    median       p95      min      max
+  tesseract   160      70.4s     0.44s     0.16s     1.51s    0.07s    1.64s
+  paddleocr_mobile 160     593.2s     3.71s     1.32s    12.89s    0.14s   13.89s
+  pero        160     222.0s     1.39s     0.48s     4.78s    0.07s    6.49s
+  paddleocr   160    7598.4s    47.49s    12.90s   200.57s    0.71s  234.33s
+  paddleocr_mobile_fullres 160    1488.9s     9.31s     6.92s    19.94s    4.76s   21.22s
+
+Sans cold start (on retire le 1er crop de chaque moteur) :
+  moteur        n      total      mean    median       p95      min      max
+  tesseract   159      69.8s     0.44s     0.16s     1.51s    0.07s    1.64s
+  paddleocr_mobile 159     588.3s     3.70s     1.21s    12.89s    0.14s   13.89s
+  pero        159     219.0s     1.38s     0.46s     4.79s    0.07s    6.49s
+  paddleocr   159    7564.9s    47.58s    12.69s   200.83s    0.71s  234.33s
+  paddleocr_mobile_fullres 159    1478.7s     9.30s     6.90s    19.95s    4.76s   21.22s
+
+Cold start (durée du 1er crop) :
+  tesseract      0.54s (crop annee_scientifique_industrielle1876_bpt6k201105v/page_0003__odNVYNDN_Q.png)
+  paddleocr_mobile    4.85s (crop annee_scientifique_industrielle1876_bpt6k201105v/page_0003__odNVYNDN_Q.png)
+  pero           2.94s (crop annee_scientifique_industrielle1876_bpt6k201105v/page_0003__odNVYNDN_Q.png)
+  paddleocr     33.52s (crop annee_scientifique_industrielle1876_bpt6k201105v/page_0003__odNVYNDN_Q.png)
+  paddleocr_mobile_fullres   10.22s (crop annee_scientifique_industrielle1876_bpt6k201105v/page_0003__odNVYNDN_Q.png)
+
+Projections (extrapolées sur médiane hot, sans cold start) :
+  Le total inclut 1 cold start unique amorti.
+
+  moteur            1 box      10 box      1k box      100k box          1M box
+  tesseract          0.7s        2.1s     2.6 min         4.3 h           1.8 j
+  paddleocr_mobile        6.1s       17.0s    20.3 min         1.4 j          14.0 j
+  pero               3.4s        7.6s     7.8 min        12.9 h           5.4 j
+  paddleocr         46.2s     2.7 min       3.5 h        14.7 j         146.9 j
+  paddleocr_mobile_fullres       17.1s     1.3 min       1.9 h         8.0 j          79.8 j
+
+Temps médian par taille de zone (n_chars_out) :
+  moteur          <100 chars     100-500    500-2000       ≥2000
+  tesseract            0.09s       0.16s       0.69s       1.42s
+  paddleocr_mobile          0.36s       1.43s       6.67s      12.87s
+  pero                 0.18s       0.46s       2.19s       4.76s
+  paddleocr            2.34s       7.13s     123.23s      31.68s
+  paddleocr_mobile_fullres          5.11s       6.02s      12.06s      19.93s

@@ -1,0 +1,89 @@
+======================================================================
+RÉSUMÉ BENCHMARK OCR — CER/WER agrégés (pondérés par longueur)
+======================================================================
+
+### Variante : brut
+
+Global (toutes zones, toutes revues) :
+  moteur              CER      WER     n_chars     n_words
+  tesseract        0.0886   0.2202      113166       18441
+  paddleocr        0.0269   0.0874      113166       18441
+  paddleocr_mobile   0.0445   0.2178      113166       18441
+  paddleocr_mobile_fullres   0.0588   0.2479      113166       18441
+  pero             0.0108   0.0384      113166       18441
+
+Par type_zone :
+  moteur             auteur      autre      corps      titre
+  tesseract          0.0968     0.1033     0.0878     0.0222
+  paddleocr          0.0000     0.1181     0.0209     0.0667
+  paddleocr_mobile     0.0645     0.0896     0.0416     0.0167
+  paddleocr_mobile_fullres     0.0000     0.1211     0.0548     0.0222
+  pero               0.0000     0.0320     0.0094     0.0000
+  (CER pondéré)
+
+Par revue :
+  tesseract:
+    annee_scientifique_industrielle1876_bpt6k201105v             CER=0.3274  WER=0.6554  N=22480
+    bulletin_academie_medecine1883_bpt6k408673d                  CER=0.0274  WER=0.1287  N=23802
+    revue_scientifique1891182_bpt6k215115j                       CER=0.0302  WER=0.1014  N=66884
+  paddleocr:
+    annee_scientifique_industrielle1876_bpt6k201105v             CER=0.0572  WER=0.1421  N=22480
+    bulletin_academie_medecine1883_bpt6k408673d                  CER=0.0365  WER=0.1148  N=23802
+    revue_scientifique1891182_bpt6k215115j                       CER=0.0133  WER=0.0585  N=66884
+  paddleocr_mobile:
+    annee_scientifique_industrielle1876_bpt6k201105v             CER=0.0627  WER=0.2434  N=22480
+    bulletin_academie_medecine1883_bpt6k408673d                  CER=0.0589  WER=0.2824  N=23802
+    revue_scientifique1891182_bpt6k215115j                       CER=0.0332  WER=0.1856  N=66884
+  paddleocr_mobile_fullres:
+    annee_scientifique_industrielle1876_bpt6k201105v             CER=0.1064  WER=0.3621  N=22480
+    bulletin_academie_medecine1883_bpt6k408673d                  CER=0.1002  WER=0.3828  N=23802
+    revue_scientifique1891182_bpt6k215115j                       CER=0.0281  WER=0.1596  N=66884
+  pero:
+    annee_scientifique_industrielle1876_bpt6k201105v             CER=0.0273  WER=0.0598  N=22480
+    bulletin_academie_medecine1883_bpt6k408673d                  CER=0.0120  WER=0.0589  N=23802
+    revue_scientifique1891182_bpt6k215115j                       CER=0.0048  WER=0.0235  N=66884
+
+----------------------------------------------------------------------
+
+### Variante : joint
+
+Global (toutes zones, toutes revues) :
+  moteur              CER      WER     n_chars     n_words
+  tesseract        0.0894   0.2268      112236       17976
+  paddleocr        0.0268   0.0889      112236       17976
+  paddleocr_mobile   0.0448   0.2222      112236       17976
+  paddleocr_mobile_fullres   0.0591   0.2534      112236       17976
+  pero             0.0107   0.0389      112236       17976
+
+Par type_zone :
+  moteur             auteur      autre      corps      titre
+  tesseract          0.0968     0.1033     0.0886     0.0222
+  paddleocr          0.0000     0.1176     0.0208     0.0667
+  paddleocr_mobile     0.0645     0.0895     0.0419     0.0167
+  paddleocr_mobile_fullres     0.0000     0.1212     0.0551     0.0222
+  pero               0.0000     0.0318     0.0094     0.0000
+  (CER pondéré)
+
+Par revue :
+  tesseract:
+    annee_scientifique_industrielle1876_bpt6k201105v             CER=0.3294  WER=0.6678  N=22346
+    bulletin_academie_medecine1883_bpt6k408673d                  CER=0.0275  WER=0.1310  N=23636
+    revue_scientifique1891182_bpt6k215115j                       CER=0.0305  WER=0.1059  N=66254
+  paddleocr:
+    annee_scientifique_industrielle1876_bpt6k201105v             CER=0.0567  WER=0.1423  N=22346
+    bulletin_academie_medecine1883_bpt6k408673d                  CER=0.0367  WER=0.1165  N=23636
+    revue_scientifique1891182_bpt6k215115j                       CER=0.0132  WER=0.0600  N=66254
+  paddleocr_mobile:
+    annee_scientifique_industrielle1876_bpt6k201105v             CER=0.0627  WER=0.2453  N=22346
+    bulletin_academie_medecine1883_bpt6k408673d                  CER=0.0594  WER=0.2872  N=23636
+    revue_scientifique1891182_bpt6k215115j                       CER=0.0335  WER=0.1905  N=66254
+  paddleocr_mobile_fullres:
+    annee_scientifique_industrielle1876_bpt6k201105v             CER=0.1065  WER=0.3662  N=22346
+    bulletin_academie_medecine1883_bpt6k408673d                  CER=0.1004  WER=0.3906  N=23636
+    revue_scientifique1891182_bpt6k215115j                       CER=0.0283  WER=0.1639  N=66254
+  pero:
+    annee_scientifique_industrielle1876_bpt6k201105v             CER=0.0270  WER=0.0590  N=22346
+    bulletin_academie_medecine1883_bpt6k408673d                  CER=0.0120  WER=0.0597  N=23636
+    revue_scientifique1891182_bpt6k215115j                       CER=0.0048  WER=0.0243  N=66254
+
+----------------------------------------------------------------------

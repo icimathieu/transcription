@@ -1,0 +1,56 @@
+l'électrode qui est en rapport avec le ventre ou équa-
+teur du muscle, coupons transversalement ce tissu un
+peu au-dessus du tendon de manière à avoir une sec-
+tion nette perpendiculaire à l'axe du muscle mettant
+sa fibre à nu, et appliquons sur cette section la seconde
+électrode. Vous voyez la déviation du galvanomètre
+s'accentuer dans le même sens et nous montrer claire-
+ment que la surface naturelle du muscle est fortement
+positive par rapport à sa section qui est, au contraire,
+fortement négative. L'expérience prouve que la surface
+du muscle est d'autant plus fortement positive qu'on
+est plus près de son équateur, et que sa section est
+d'autant plus négative qu'on approche davantage la
+deuxième électrode du centre de la section.
+Nous trouverions dans le nerf un courant analogue,
+mais plus faible. La force électromotrice du muscle
+chez la grenouille peut dépasser un dixième d'élément
+Daniell. Pour le nerf, elle est plus faible et peut at-
+teindre 3 centièmes de la même unité.
+Voilà pour le courant continu ou courant de repos.
+Démontrons à présent l'existence du courant momen-
+tané, dit courant d'action.
+Pour cela, prenons deux pattes galvanoscopiques ;
+plaçons le nerf de la deuxième sur les muscles de la
+première, et faisons contracter cette première en exci-
+tant mécaniquement son nerf. Aussitôt la seconde se
+contracte également, montrant ainsi que son nerf a
+été excité par les muscles de la seconde. C'est la con-
+traction induite de Matteucci. Lorsqu'un muscle se con-
+tracte, il subit donc une variation électrique dans sa
+masse, capable d'exciter un nerf reposant sur lui?
+Voyons si le galvanomètre justifiera cette déduction.
+La patte galvanoscopique étant installée comme ci-
+dessus pour la constatation au galvanomètre du cou-
+rant de repos, j'excite son nerf de façon à la té-
+taniser. Vous voyez aussitôt le galvanomètre revenir
+vers le zéro, accusant ainsi que le courant de repos a
+subi une grande diminution. C'est cette diminution
+qui constitue l'oscillation négative de du Bois-Reymond
+ou le courant d'action. Nous verrions le nerf se com-
+porter de même. C'est donc cette brusque variation
+du courant musculaire qui a suffi tout à l'heure pour
+exciter le nerf de la seconde patte galvanoscopique.
+La variation négative accompagne donc toute con-
+traction musculaire (et plus généralement toute défor-
+mation de la matière protoplasmique); aussi pouvons-
+nous la mettre en évidence en prenant un muscle qui
+se contracte rythmiquement comme le coeur. Je mets
+un coeur de tortue sur les électrodes qui sont en rap-
+port avec le galvanomètre à circuit mobile. Vous voyez
+l'index lumineux du galvanomètre décrire sur l'échelle
+murale une oscillation absolument isochrone avec les
+battements du cœur. La même expérience peut se
+faire sur un animal intact (chien ou lapin), en enfon-
+çant dans le cœur, à travers la paroi thoracique, une
+très fine aiguille d'acupuncture en argent chloruré. La

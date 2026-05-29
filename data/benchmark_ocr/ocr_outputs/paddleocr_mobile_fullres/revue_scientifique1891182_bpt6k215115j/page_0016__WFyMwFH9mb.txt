@@ -1,0 +1,28 @@
+ORGANE ÉLECTRIQUE.
+10 La decharge electrique est
+volontaire.
+20 L'organe électrique est cloison-
+né, chaque cloison contenant
+deux substances differentes.
+30 La section du nerf paralyse
+l'organe électrique.
+40 Une excitation unique du nerf
+provoque une decharge unique
+de lorgane ou secousse elec-
+trique.
+50 Des excitations repétess pro-
+voquent une decharge téta-
+nique de l'organe.
+60 Le curare paralyse le nerf
+électrique.
+70 La strychnine tétanise lor-
+gane.
+：
+80 Le froid et-la chaleur modi-
+fient la decharge clectrique.
+-go La decharge est un pheno-
+mène rythmique discontinu.
+100 La décharge électrique pré-
+sente le meme retard sur l'ex-
+citation di nerf (temps perdu
+.électrique).

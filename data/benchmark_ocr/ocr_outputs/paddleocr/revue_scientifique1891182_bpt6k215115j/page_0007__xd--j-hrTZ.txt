@@ -1,0 +1,6 @@
+-
+.mobilité des bobines, le long de la règle R, on peut
+changer à volonté la sensibilité de l'appareil et -le
+transformer en galvanomètre différentiel, etc... Comme
+le précédent, cet appareil est absolument apériodique
+•

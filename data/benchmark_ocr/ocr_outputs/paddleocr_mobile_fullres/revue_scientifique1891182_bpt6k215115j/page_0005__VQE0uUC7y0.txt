@@ -1,0 +1,25 @@
+qu'il soit, produit des courants parasites qui rendent
+toute mesure exacte impossible. J. Regnauld a remedié
+le premier a cet inconvénient en prenant comme con-
+ducteur un fil de zinc amalgamé trempant dans une
+solution de sulfate de zinc. Mais on ne peut mettre da-
+vantage les tissus en contact avec la solution de sulfate
+de zinc qui les détruirait rapidement; il faut un liquide
+intermediaire. Apres de nombreux essais, les physiolo-
+gistes se sont arreté a une solution de chlorure de so-
+dium dans l'eau distillée a 10 pour 1000, dite solution
+physiologique. Cette solution imprègne un corps po-
+reux (papier a filtre, terre glaise, etc.…), lequel est en
+contact d'un coté avec le tisu, de lautre avec la solu-
+tion de sulfate de zinc. Ces electrodes, aujourd'hui
+classiques, recoivent diverses formes bien connues des
+physiologistes (auges, tubes, pointes,etc.….). Les élec-
+trodes ainsi constituées sont impolarisables, mais pas
+forcement homogenes, c'est-a-dire qu'elles donnent un
+courant alors meme qu'elles sont réunies par un con-
+ducteur n'étant le siege d'aucune force electro-mo-
+trice.
+J'ai reconnu que cette non-homogénéité provenait
+de courants électro-capillaires qui prennent naissance
+au point de contact des deux solutions.
+Le seul moyen de parer à tous ces inconvénients

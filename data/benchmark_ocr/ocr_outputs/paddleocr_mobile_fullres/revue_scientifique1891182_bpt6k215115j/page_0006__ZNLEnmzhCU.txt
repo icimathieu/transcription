@@ -1,0 +1,19 @@
+leté I permet de soulever le cadre et de lorienter par
+rapport au champ magnétique. Un miroir J, solidaire
+du cadre, permet de lire la déviation par la méthode
+du miroir. En projetant sur ce miroir un rayon lumi-
+neux qui va eclairer une échelle divisee, placee a dis-
+tance sur le mur de la salle, vous voyez que les moin-
+dres déviations du cadre deviennent apparentes. Ce
+cadre porte inferieurement' un fil de platine D qui
+trempe dans un godet à mercure que surmonte une
+couche d'eau contenant du cyanure de potassium. Un
+des bouts du fil enroulé sur le cadre correspond au
+fl JH, et se trouve mis en contact electrique avec la
+potence M et la borne K.Un second fil de platine trem-
+pant dans le mercure met, par la vis E, le second bout
+du fil formant le cadre mobile, en contact avec la
+borne L. Le courant a mesurer entrant par K monte
+le long de la colonne M, descend par le fil de suspen-
+sion KJ,traverse le cadre CCet ressort par D pour
+aboutir a la vis E et a la borne L. Le fil d'argent HJ a
