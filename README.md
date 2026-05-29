@@ -20,13 +20,14 @@ transcription/
 │     └─ crops/                # (non publié — crops par ligne)
 ├─ output/                     # généré localement à l'exécution, non publié
 ├─ scripts_notebooks/
-│  ├─ tesseract_boxes.py
-│  ├─ paddleocr_boxes.py
-│  ├─ paddleocr_cpu_simple.py  (non publié)
-│  ├─ paddleocr_vl_test.py     (non publié)
-│  ├─ pdf2image.py             (non publié)
-│  ├─ pdf2image.ipynb
-│  └─ scripts_benchmark_ocr/   # scripts du benchmark multi-moteurs
+│  ├─ scripts_benchmark_ocr/      # scripts du benchmark multi-moteurs (référence courante)
+│  └─ archives/                   # scripts d'exploration / pipelines antérieures
+│     ├─ tesseract_boxes.py          # pipeline page-entière multi-colonnes (recommandée)
+│     ├─ paddleocr_boxes.py          # exploration Paddle + reconstruction colonnes
+│     ├─ pdf2image.ipynb             # notebook d'exploration PDF -> images -> OCR
+│     ├─ paddleocr_cpu_simple.py     (non publié)
+│     ├─ paddleocr_vl_test.py        (non publié)
+│     └─ pdf2image.py                (non publié)
 ├─ notes_ocr_memoire.md        (non publié)
 └─ requirements
 ```
@@ -35,29 +36,29 @@ transcription/
 ## Workflows testés
 
 ### 0) Workflow exploratoire notebook/script (PDF -> images -> OCR)
-- Fichiers: `scripts_notebooks/pdf2image.ipynb` et `scripts_notebooks/pdf2image.py`.
+- Fichiers: `scripts_notebooks/archives/pdf2image.ipynb` et `scripts_notebooks/archives/pdf2image.py`.
 - Rôle dans le projet:
   - conversion PDF -> images,
   - premiers essais PaddleOCR,
   - essais PP-StructureV3,
   - essais PaddleOCR-VL,
   - export intermédiaire JSON/JSONL.
-- Ce workflow a servi de base d'exploration avant la stabilisation des scripts dédiés `paddleocr_*` et `tesseract_boxes.py`.
+- Ce workflow a servi de base d'exploration avant la stabilisation des scripts dédiés `archives/paddleocr_*` et `archives/tesseract_boxes.py`.
 - Limite observée : nous avons décidés de scraper directement des .png ou .jpg et non de convertir le pdf en images.
 
 ### 1) Pipeline PaddleOCR-VL
-- Script: `scripts_notebooks/paddleocr_vl_test.py`
+- Script: `scripts_notebooks/archives/paddleocr_vl_test.py`
 - Intérêt: compréhension de documents avancée.
 - Limite observée: trop lourd pour un usage massif sur CPU local (temps d'inférence élevé, overhead important). Abandonné très vite.
 
 ### 2) Pipeline PaddleOCR "classique" + PP-StructureV3 / bounding boxes
-- Scripts: `scripts_notebooks/paddleocr_cpu_simple.py`, puis `scripts_notebooks/paddleocr_boxes.py`
+- Scripts: `scripts_notebooks/archives/paddleocr_cpu_simple.py`, puis `scripts_notebooks/archives/paddleocr_boxes.py`
 - Intérêt: meilleure qualité OCR que des moteurs plus légers sur cas difficiles.
 - Limite observée: temps de calcul important sur CPU (environ ~1 minute sur certaines images 1024 px, plus sur images plus grandes).
 - Utiliser PP-StructureV3 ou de la reconstruction manuelle avec bounding box est assez équivalent dans le résultat mais PP-Structure alourdit le process en calcul et en temps.
 
 ### 3) Pipeline Tesseract + bounding boxes + reconstruction de colonnes
-- Script: `scripts_notebooks/tesseract_boxes.py`
+- Script: `scripts_notebooks/archives/tesseract_boxes.py`
 - Principe:
   - OCR Tesseract en TSV (mots + boîtes),
   - agrégation en lignes,
@@ -111,7 +112,7 @@ pip install -r requirements
 ## Lancer la pipeline recommandée (Tesseract)
 ```bash
 source .venv/bin/activate
-python scripts_notebooks/tesseract_boxes.py \
+python scripts_notebooks/archives/tesseract_boxes.py \
   --image data/data_to_git/bitonal_1024.png \
   --tesseract-bin "$(command -v tesseract)"
 ```
@@ -129,9 +130,9 @@ pip install -r requirements
 ```
 
 Puis utiliser:
-- `scripts_notebooks/paddleocr_boxes.py`
-- `scripts_notebooks/paddleocr_cpu_simple.py`
-- `scripts_notebooks/paddleocr_vl_test.py`
+- `scripts_notebooks/archives/paddleocr_boxes.py`
+- `scripts_notebooks/archives/paddleocr_cpu_simple.py`
+- `scripts_notebooks/archives/paddleocr_vl_test.py`
 
 ## Reproduire les sorties en batch
 
@@ -140,7 +141,7 @@ Pour générer les sorties Tesseract pour l'ensemble du corpus publié:
 ```bash
 source .venv/bin/activate
 for img in data/data_to_git/*.png; do
-  python scripts_notebooks/tesseract_boxes.py \
+  python scripts_notebooks/archives/tesseract_boxes.py \
     --image "$img" \
     --tesseract-bin "$(command -v tesseract)"
 done
