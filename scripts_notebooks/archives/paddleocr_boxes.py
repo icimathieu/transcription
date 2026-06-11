@@ -25,8 +25,8 @@ def build_parser() -> argparse.ArgumentParser:
     )
     parser.add_argument(
         "--out-dir",
-        default="/Users/mathieu/Documents/memoire/code_memoire/transcription/output/paddleocr_boxes",
-        help="Directory for outputs.",
+        default="output/paddleocr_boxes",
+        help="Directory for outputs (relative to current working directory).",
     )
     parser.add_argument(
         "--lang",

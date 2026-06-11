@@ -92,12 +92,17 @@ def main() -> int:
         print("CSV vide.", file=sys.stderr)
         return 2
 
+    try:
+        display_path = csv_path.relative_to(Path.cwd())
+    except ValueError:
+        display_path = csv_path
+
     lines: List[str] = []
     lines.append("=" * 78)
     lines.append("TEMPS D'INFÉRENCE PAR MOTEUR")
     lines.append("=" * 78)
     lines.append("")
-    lines.append(f"Source : {csv_path}")
+    lines.append(f"Source : {display_path}")
     lines.append("")
 
     # Stats principales (avec et sans cold start)

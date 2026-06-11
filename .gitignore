@@ -26,3 +26,7 @@ notes_ocr_memoire.md
 scripts_notebooks/archives/paddleocr_vl_test.py
 scripts_notebooks/archives/paddleocr_cpu_simple.py
 scripts_notebooks/archives/pdf2image.py
+
+# Méta de session Claude Code (interne, non destiné aux lecteurs publics)
+CLAUDE.md
+scripts_notebooks/mass_ocr_jorf/

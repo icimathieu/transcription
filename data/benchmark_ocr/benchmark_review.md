@@ -1,6 +1,6 @@
 # Jeu de données — benchmark OCR
 
-Dataset constitué pour le benchmark OCR (Tesseract / PaddleOCR / pero-ocr). 3 numéros, 20 premières pages de chacun, soit **60 images au total**.
+Dataset constitué pour le benchmark OCR (Tesseract / PaddleOCR / pero-ocr). 3 numéros, 20 premières pages extraites de chacun (soit **60 images**), dont **45 annotées** (15 par numéro ; les 5 dernières gardées en réserve).
 
 Source des images : `scraping_pdf/images_process/<revue>/<numero_id>/page_NNNN.png` (pages PNG converties depuis le PDF Gallica).
 Source des métadonnées : `scraping_pdf/input/arks_numeros.json` et `scraping_pdf/input/arks_revues.json`.
@@ -82,7 +82,7 @@ Les sous-dossiers `crops/`, `ocr_outputs/` et `results/` sont produits par les s
 
 - Outil : **Label Studio** (en local, http://localhost:8080).
 - Une seule tâche par page image. Annotation **bloc par bloc** (= zone logique : colonne, encadré, légende, tableau, titre d'article, etc.). Pas d'annotation au niveau ligne ni article.
-- 3 à 8 blocs par page typique → ~300 blocs au total sur les 60 pages.
+- 3 à 8 blocs par page typique → ~160 zones au total sur les 45 pages annotées (15 par numéro).
 - Granularité = grain `TextRegion` ICDAR.
 
 ## Catégories de blocs
@@ -179,11 +179,11 @@ L'outillage de référence est le **PRImA Performance Evaluation Toolkit** (http
 ## Schéma du pipeline
 
 ```
-images_dataset/<revue>/page_NNNN.png       (60 pages)
+images_dataset/<revue>/page_NNNN.png       (60 pages, dont 45 annotées)
         │
         │ Label Studio → export JSON
         ▼
-crops/<revue>/page_NNNN__zone_K.png        (~300 crops, 1 par bloc)
+crops/<revue>/page_NNNN__zone_K.png        (~160 crops, 1 par zone)
 crops/<revue>/page_NNNN__zone_K.txt        (transcription GT correspondante)
         │
         │ pour chaque crop, 3 moteurs

@@ -2,7 +2,7 @@
 TEMPS D'INFÉRENCE PAR MOTEUR
 ==============================================================================
 
-Source : /Users/mathieu/Documents/memoire/code_memoire/transcription/data/benchmark_ocr/ocr_outputs/timings.csv
+Source : data/benchmark_ocr/ocr_outputs/timings.csv
 
 Avec cold start (1ère exécution = chargement du modèle inclus) :
   moteur        n      total      mean    median       p95      min      max

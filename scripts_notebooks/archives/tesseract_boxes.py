@@ -23,8 +23,8 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--image", required=True, help="Path to input image.")
     parser.add_argument(
         "--out-dir",
-        default="/Users/mathieu/Documents/memoire/code_memoire/transcription/output/tesseract_boxes",
-        help="Directory for outputs.",
+        default="output/tesseract_boxes",
+        help="Directory for outputs (relative to current working directory).",
     )
     parser.add_argument(
         "--lang",
@@ -39,8 +39,8 @@ def build_parser() -> argparse.ArgumentParser:
     )
     parser.add_argument(
         "--tesseract-bin",
-        default="/opt/homebrew/bin/tesseract",
-        help="Absolute path to tesseract binary.",
+        default="tesseract",
+        help="Path to tesseract binary (resolved via PATH by default).",
     )
     return parser
 
